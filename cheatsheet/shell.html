@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head><title>cheatsheet</title></head>
+<body>
+  <h1>cheatsheet</h1>
+
+
+  <div>
+    <h2>
+      <span>Which directory am I in?</span>
+    </h2>
+    <ul>
+      <li>windows: cd</li>
+      <li>OS X: pwd</li>
+    </ul>
+
+    <h2>
+      <span>What files and directories are in this directory?</span>
+    </h2>
+    <ul><li>Windows:dir</li>
+      <li>OS X: ls</li>
+      <li>ls -l  gives you detailed info</li></ul>
+    <h2><span>Changing directories:</span> </h2>
+    <ul>Action: to go into a directory
+      <li>Windows cd dir-name</li>
+      <li>OS X: cd dir-name</li></ul>
+
+    <ul>Action: To go up one directory
+      <li>Windows: cd..</li>
+      <li>OS x: cd ..</li></ul>
+  </div>
+  <pre>
+    rx3210@rx3210-ThinkPad-T430s:~/poco/recipes$ ls -l
+    total 460
+    -rw-rw-r-- 1 rx3210 rx3210   4499 Nov 27 16:51 recipes.html
+    -rw-rw-r-- 1 rx3210 rx3210 462105 Nov 27 15:55 sparking.png
+    rx3210@rx3210-ThinkPad-T430s:~/poco/recipes$ ls -lh
+    total 460K
+    -rw-rw-r-- 1 rx3210 rx3210 4.4K Nov 27 16:51 recipes.html
+    -rw-rw-r-- 1 rx3210 rx3210 452K Nov 27 15:55 sparking.png
+    rx3210@rx3210-ThinkPad-T430s:~/poco/recipes$ cd ..
+    rx3210@rx3210-ThinkPad-T430s:~/poco$ ls -lF
+    total 20
+    drwxrwxr-x 2 rx3210 rx3210 4096 Nov 29 11:57  cheatsheet/
+    drwxrwxr-x 3 rx3210 rx3210 4096 Nov 29 11:57  portfolio/
+    drwxrwxr-x 4 rx3210 rx3210 4096 Nov 29 11:57 'Power coders Curriculum'/
+    drwxrwxr-x 2 rx3210 rx3210 4096 Nov 29 11:57  recipes/
+    drwxrwxr-x 2 rx3210 rx3210 4096 Nov 29 11:57  scratch/
+    rx3210@rx3210-ThinkPad-T430s:~/po<span>Creating (making) directories</span>) directories
+    windows: mkdir dir-name
+    osx: mkdir dir-name
+
+    <pre>rx3210@rx3210-ThinkPad-T430s:~/poco$ cd ..
+      rx3210@rx3210-ThinkPad-T430s:~$ mkdir test
+      rx3210@rx3210-ThinkPad-T430s:~$ ls
+      Desktop  Documents  Downloads  Music  Pictures  poco  Public  Release.key  Templates  test  Vi<span>Deleting Directories</span>g Directories
+      WIndows: rmdir dir-name
+      OS-X: rmdir dir-name
+
+      <pre>rx3210@rx3210-ThinkPad-T430s:~$ rmdir test
+        rx3210@rx3210-ThinkPad-T430s:~$ rmdir test
+        rmdir: failed to remove 'test': No such file or directory
+        rx3210@rx3210-ThinkPad-T430s:~$
+      </pre>
+
+      rmdir deletes only empty Directories
+      --------------------
+      <h2>
+        <span>Safe and unsafe characters</span>
+      </h2>
+      <ul>Safe:
+          <li>a-z</li>
+          <li>A-Z</li>
+          <li>0-9</li>
+          <li>-</li>
+          <li>_</li>
+          <li>.</li></ul>
+
+      <h2>
+        <span>Unsafe:</span>
+      </h2>
+      <p>Everything Release
+        Especially:</p>
+      <ul>
+        <li>'</li>
+        <li>"</li>
+        <li>(</li>
+        <li>[</li>
+      </ul>
+
+      <h2>
+        <span>What can go wrong?</span>
+      </h2>
+      <ul><li>Mis-spell a command: qqqqqqqqqqqqqq('a'x8)</li>
+        <li>cd in to a directory that does not exist</li>
+        <li>cd ...</li>
+        <li>cd .</li>
+        <li>cd filename</li>
+        <li>rmdir aaaaaaaaaaaaa</li></ul>
+
+      <pre>
+      <code>  rx3210@rx3210-ThinkPad-T430s:~$ cd dsd
+        bash: cd: dsd: No such file or directory
+
+        rx3210@rx3210-ThinkPad-T430s:~$ cd ...
+        bash: cd: ...: No such file or directory
+        rx3210@rx3210-ThinkPad-T430s:~$
+
+        rx3210@rx3210-ThinkPad-T430s:~$ cd .
+        rx3210@rx3210-ThinkPad-T430s:~$
+
+        rx3210@rx3210-ThinkPad-T430s:~$ cd Release.key
+        bash: cd: Release.key: Not a directory
+        rx3210@rx3210-ThinkPad-T430s:~$
+
+        rx3210@rx3210-ThinkPad-T430s:~$ rmdir aaaaaaaaaaaaaaa
+        rmdir: failed to remove 'aaaaaaaaaaaaaaa': No such file or directory
+        rx3210@rx3210-ThinkPad-T430s:~$</code>
+      </pre>
+
+    <p>  cd . (means the current directory it becomes useful when you have option characters in the name)</p>
+
+
+
+
+
+    </body>
+    </html>
