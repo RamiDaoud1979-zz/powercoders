@@ -1,4 +1,4 @@
-em {
+p em {
   font-style: normal; /*that cancelled the italic style of the em element*/
   text-decoration: underline;
 }
