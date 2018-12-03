@@ -1,12 +1,345 @@
 <!DOCTYPE html>
-  <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-  </head>
-  <body>
-I <h1>HTML learning material</h1>
-  </body>
-  </html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML Cheatsheet</title>
+</head>
+<body>
+  <h1>HTML cheatsheet</h1>
+
+  <div id="header">
+    <p><a href="index.html">Index</a> : HTML cheatsheet </p>
+  </div>
+
+  <div id="content">
+
+    <div id="htmlQ1" class="question">
+      <h2><span class="question">What is HTML? consists of?</span></h2>
+      <div id="htmlA1" class="answer">
+        <ul>
+          <li><span class="answer-list">HTML (HyperText Markup Language).</span></li>
+          <li><span class="answer-list">Elements.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div  id="htmlQ2" class="question">
+      <h2><span class="question">What are Elements and their types?</span></h2>
+      <div id="htmlA2" class="answer">
+        <p><span class="paragraph-answer"><em>Each Element</em>: Start tag, content, end tag.</span></p>
+        <p><span class="paragraph-answer"><em>Two types</em>:    Block level and inline level.</span></p>
+      </div>
+    </div>
+
+    <div id="htmlQ3" class="question">
+      <h2><span class="question">Define&sol;list some of the Block level Elements?</span></h2>
+      <div id="htmlA3" class="answer">
+        <p><span class="paragraph-answer">They form a new block on the page – there will be a blank line before and after each block level elements.</span></p>
+        <ul>
+          <li><span class="answer-list"><a href="https://developer.mozilla.org/en-US/docs/Web/html/Element/p">&lt;p&gt;</a></span></li>
+          <li><span class="answer-list"><a href="https://developer.mozilla.org/en-US/docs/Web/html/Element/h1">&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;</a></span></li>
+          <li><span class="answer-list"><a href="https://developer.mozilla.org/en-US/docs/Web/html/Element/ol">&lt;ol&gt;</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/html/Element/ul">&lt;ul&gt;</a></span></li>
+          <li><span class="answer-list"><a href="https://developer.mozilla.org/en-US/docs/Web/html/Element/pre">&lt;pre&gt;</a></span></li>
+          <li><span class="answer-list"><a href="https://developer.mozilla.org/en-US/docs/Web/html/Element/div">&lt;div&gt;</a></span></li>
+          <li><span class="answer-list"><a href="https://developer.mozilla.org/en-US/docs/Web/html/Element/br">&lt;br&gt;</a></span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="htmlQ4" class="question">
+      <h2><span class="question">What worth knowing about heading level Elements &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;?</span></h2>
+      <div id="htmlA4" class="answer">
+        <ul>
+          <li><span class="answer-list">Their font size decreases from H1 up to H6.</span></li>
+          <li><span class="answer-list">Their semantic importance decreases from H1 up to H6.</span></li>
+          <li><span class="answer-list">They should not be used for styling font in bold but to emphasize the importance of heading.</span></li>
+          <li><span class="answer-list"> Avoid using H1 more than once in a page.</span></li>
+          <li><span class="answer-list">Avoid  using h2 to h3 or h4  to list items and let ordered or unordered list take care of that and reserve them to headings and subheadings with combination use of the p tag.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="htmlQ5" class="question">
+      <h2><span class="question">What worth knowing about  &lt;div&gt;?</span></h2>
+      <div id="htmlA5" class="answer">
+        <ul><li><span class="answer-list">div element is purely structural.</span></li>
+          <li><span class="answer-list">Use it to group blocks of related elements.</span></li>
+          <li><span class="answer-list">Grouping making styling easier later.</span></li>
+          <li><span class="answer-list"> It is preferable to use with it the unique id attribute instead of the class attribute.</span></li>
+          <li><span class="answer-list">when used with id attribute you can divide your page into header content and footer.</span></li></ul>
+          <div class="example">
+            <p><em>div Example</em>:</p>
+            <pre><code>
+              &lt;div id=&quot;header&quot;&gt;
+              &lt;p&gt;Article heading&lt;/p&gt;
+              &lt;p&gt;Home : Articles : Article one&lt;/p&gt;
+              &lt;/div&gt;
+              <br>
+              &lt;div id=&quot;content&quot;&gt;
+              &lt;p&gt;Some content.&lt;/p&gt;
+              &lt;p&gt;Some more content.&lt;/p&gt;
+              &lt;/div&gt;
+              <br>
+              &lt;div id=&quot;footer&quot;&gt;
+              &lt;p&gt;Author: Nik&lt;/p&gt;
+              &lt;/div&gt;
+            </code></pre>
+          </div>
+        </div>
+        <!--
+        <div class="result"></div>
+      -->
+    </div>
+
+    <div id="htmlQ6" class="question">
+      <h2><span class="question">What worth knowing about  &lt;span&gt;?</span></h2>
+      <div id="htmlA6" class="answer">
+        <ul>
+          <li><span class="answer-list">span is also purely structural.</span></li>
+          <li><span class="answer-list">Like div, but for inline content.</span></li>
+          <li><span class="answer-list">Grouping making styling easier later.</span></li>
+          <li><span class="answer-list"> It is preferable to use with the class attribute rather than with the unique ID attribute.</span></li>
+          <li><span class="answer-list">When used with the class attribute you can manipulate with precision many parts of your single div or  p through JS and/or CSS.</span></li>
+        </ul>
+        <div class="example">
+          <p><em>Span Example</em>:</p>
+          <pre><code>
+            &lt;div id=&quot;header&quot;&gt;
+            &lt;p&gt;Article heading&lt;/p&gt;
+            &lt;p&gt;&lt;span class=&quot;nav&quot;&gt;Home&lt;/span&gt; :
+            &lt;span class=&quot;nav&quot;&gt;Articles&lt;/span&gt; :
+            Article one&lt;/p&gt;
+            &lt;/div&gt;
+            <br>
+            &lt;div id=&quot;content&quot;&gt;
+            &lt;p&gt;Some content.&lt;/p&gt;
+            &lt;p&gt;Some more content.&lt;/p&gt;
+            &lt;/p&gt;
+            <br>
+            &lt;div id=&quot;footer&quot;&gt;
+            &lt;p&gt;Author:
+            &lt;span class=&quot;author-name&quot;&gt;Nik&lt;/span&gt;&lt;/p&gt;
+            &lt;/div&gt;
+          </code></pre>
+        </div>
+      </div>
+      <!--
+      <div class="result"></div>
+    -->
+
+    <div id="htmlQ7" class="question">
+      <h2><span class="question">What are HTML entities?</span></h2>
+      <div id="htmlA7" class="answer">
+        <ul>
+          <li><span class="answer-list">Difficult to write some characters in HTML</span></li>
+          <li><span class="answer-list">Because they have special meaning</span></li>
+          <li><span class="answer-list">&lt;, &gt;, &amp;</span></li>
+          <li><span class="answer-list"> Use <strong>entities</strong></span></li>
+          <li><span class="answer-list">&lt; &gt; &amp;</span></li>
+          <li><span class="answer-list"><a href="https://dev.w3.org/html5/html-author/charref">Official List of Character Entities</a></span></li>
+        </ul>
+        <div class="example">
+          <p><em>Entity Example</em>:</p>
+          <pre><code>
+            &lt;<span>p</span>&gt;You write a p tag like <span>&amp;lt;</span>p<span>&amp;gt;</span>.&lt;/<span>p</span>&gt;
+            &lt;p&gt;You write an &amp; entity like &amp;amp;amp;.&lt;/p&gt;
+          </code></pre>
+        </div>
+        <div class="result">
+          <p><em>Entity Result</em>:</p>
+          <p>You write a p tag like &lt;p&gt;.</p>
+          <p>You write an & entity like &amp;amp;.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="htmlQ8" class="question">
+      <h2><span class="question">Define&sol;list some of the Inline level Elements?</span></h2>
+      <div id="htmlA8" class="answer">
+        <p><span class="paragraph-answer">These are always contained inside a block-level element and normally only surround a small part of the content.</span></p>
+        <ul>
+          <li><span class="answer-list"><a href="https://developer.mozilla.org/en-US/docs/Web/html/Element/a">&lt;a&gt;</a></span></li>
+          <li><span class="answer-list"><a href="https://developer.mozilla.org/en-US/docs/Web/html/Element/br">&lt;br&gt;</a></span></li>
+          <li><span class="answer-list"><a href="https://developer.mozilla.org/en-US/docs/Web/html/Element/em">&lt;em&gt;</a></span></li>
+          <li><span class="answer-list"><a href="https://developer.mozilla.org/en-US/docs/Web/html/Element/i">&lt;i&gt;</a></span></li>
+          <li><span class="answer-list"><a href="https://developer.mozilla.org/en-US/docs/Web/html/Element/img">&lt;img&gt;</a></span></li>
+          <li><span class="answer-list"><a href="https://developer.mozilla.org/en-US/docs/Web/html/Element/span">&lt;span&gt;</a></span></li>
+          <li><span class="answer-list"><a href="https://developer.mozilla.org/en-US/docs/Web/html/Element/strong">&lt;strong&gt;</a></span></li>
+        </ul>
+        <div class="example">
+          <p><em>Inline Elements Example</em>:</p>
+          <pre><code>
+            &lt;p&gt;&lt;em&gt;One&lt;&sol;em&gt;&lt;em&gt;two&lt;&sol;em&gt;
+            &lt;em&gt;three&lt;&sol;em&gt;&lt;&sol;p&gt;
+            &lt;p&gt;four&lt;&sol;p&gt;&lt;p&gt;five&lt;&sol;p&gt;&lt;p&gt;six&lt;&sol;p&gt;
+          </code></pre>
+        </div>
+        <div class="result">
+          <p><em>Inline Element Result</em>:</p>
+          <p><em>One</em> <em>two</em>
+            <em>three</em></p>
+            <p>four</p><p>five</p><p>six</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div  id="htmlQ9" class="question">
+      <h2><span class="question">How to indent Block level Elements?</span></h2>
+      <div id="htmlA9" class="answer">
+        <p><span class="paragraph-answer">Indenting by two spaces for each new block level element.</span></p>
+      </div>
+    </div>
+
+    <div  id="htmlQ10" class="question">
+      <h2><span class="question">What does Elements Nesting mean?</span></h2>
+      <div id="htmlA10" class="answer">
+        <p><span class="paragraph-answer">Elements can be placed inside other elements. We say that they wrapped (or nested) inside each other.</span></p>
+        <div class="example">
+          <p><em>Elements Nesting Example</em>:</p>
+          <pre><code>
+            &lt;p&gt;This is an &lt;em&gt;html&lt;&sol;em&gt; paragraph.&lt;&sol;p&gt;
+          </code></pre>
+        </div>
+        <div class="result">
+          <p><em>Result</em>:</p>
+          <p><span class="result">This is an <em>html</em> paragraph.</span></p>
+          <p><span class="caution"><strong>Caution!</strong> Elements must not overlap. You can not close an element unless all the elements that it contains are closed first.</span><br>
+            Inline Elements can nest inside block Elements: e.g em inside p. <br>
+            Inline ELements can nest inside inline Elements e.g. em inside strong. <br>
+            Block Elements sometimes cannot nest inside another Block Element e.g h inside p.<br>
+            Block Elements sometimes can nest inside another block ELement e.g div inside div or ul inside div or p inside div. </p>
+            Each element has different rules about what can and cannot be placed inside it. so aformentioned nesting cases are broadly correct.
+            We can use MDN to see what those rules are for any element we're interested in. we can search for [mdn element ul], then search for "Permitted content" and there we can tell what elements can be nested inside the ul element which may vary among elements.
+          </div>
+        </div>
+      </div>
+
+      <div  id="htmlQ11" class="question">
+        <div id="htmlA11" class="answer">
+          <h2><span class="question">What is the document type &lt;!DOCUMENT html&gt;? </span></h2>
+          <p><span class="paragraph-answer"> It tells the browser what type it was and what rules to follow. it comes before html element.</span></p>
+          <p><span class="paragraph-answer"> DOCUMENT should be in uppercase to be sure that it works in all browsers </span></p>
+          <p><span class="paragraph-answer"> Every page starts with the DOCTYPE declaration. </span></p>
+        </div>
+      </div>
+
+      <div  id="htmlQ12" class="question">
+        <h2><span class="question">Give me basic html structure</span></h2>
+        <div id="htmlA12" class="answer">
+          <p><span class="example"><em>DOM Example</em></span>:</p>
+          <pre><code>
+            1: &lt;!DOCTYPE html&gt;
+            2: &lt;html&gt;
+            3:   &lt;head&gt;
+            4:     &lt;title&gt;My test page&lt;&sol;title&gt;
+            5:   &lt;head&gt;
+            6:
+            7:   &lt;body&gt;
+            8:     &lt;h1&gt;This is a heading&lt;&sol;h1&gt;
+            9:
+            10:     &lt;p&gt;This is a single paragraph.&lt;&sol;p&gt;
+            11:   &lt;&sol;body&gt;
+            12: &lt;&sol;html&gt;
+          </code></pre>
+          <!--
+          <div class="result"></div>
+        --></div>
+      </div>
+      <div id="htmlQ13" class="question">
+        <h2><span  class="question">Where you would normally see the &lt;title&gt; mentioned in the previous example appear in the browser?</span></h2>
+        <div id="htmlA13" class="answer">
+          <ul>
+            <li><span class="answer-list">In the tab for the page in the browser.</span></li>
+            <li><span class="answer-list">The default name for the page's bookmark.</span></li>
+            <li><span class="answer-list">In a search engine result page.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div  id="htmlQ14" class="question">
+        <h2><span class="question">What are the types of images?</span></h2>
+        <div id="htmlA14" class="answer">
+          <ul>
+            <li><span class="answer-list">PNG (Portable Network Graphics), .png</span></li>
+            <ul>
+              <li>Raster format.</li>
+              <li>Lossless.</li>
+              <li>Best for text, line-art, flat colors.</li>
+            </ul>
+            <li><span class="answer-list">JPEG (Joint Photographic Expert Group), .jpeg, .jpg</span></li>
+            <ul>
+              <li>Raster format.</li>
+              <li>Lossy.</li>
+              <li>Good for photos.</li>
+            </ul>
+            <li><span class="answer-list">SVG (Scalable Vector Graphics), .svg.</span></li>
+            <ul>
+              <li>Vector format.</li>
+              <li>Supports interactivity and animation.</li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+
+      <div  id="htmlQ15" class="question">
+        <h2><span class="question">Do different elements have different attributes?</span></h2>
+        <div id="htmlA15" class="answer">
+          <p><span class="paragraph-answer"> <strong>YES!</strong> The html specification says which attributes are allowed for each element, you can't just write an attribute on an element and hope it will work.</span></p>
+          <pre>
+            <code>  <i>&lt;!-- This does *not* work --&gt;</i>
+              &lt;p src="name-of-file.png"&gt;...&lt;&sol;p&gt;
+            </code>
+          </pre>
+        </div>
+      </div>
+
+      <div  id="htmlQ16" class="question">
+        <h2><span class="question">What are useful community packages for Atom text editor?</span></h2>
+        <div id="htmlA16" class="answer">
+          <ul>
+            <li><span class="answer-list"><a href="https://atom.io/packages/htmlhint">htmlhint.</a></span></li>
+            <li><span class="answer-list"><a href="https://atom.io/packages/emmet">emmet.</a></span></li>
+            <li><span class="answer-list"><a href="https://atom.io/packages/auto-indent">auto-indent.</a></span></li>
+            <li><span class="answer-list"><a href="https://atom.io/packages/html-entitize">html-entitize.</a></span></li>
+            <li><span class="answer-list"><a href="https://atom.io/packages/atom-live-server">atom-live-server.</a></span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div  id="htmlQ17" class="question">
+        <h2><span class="question">What packages need to be disabled?</span></h2>
+        <div id="htmlA17" class="answer">
+          <ul>
+            <li><span class="answer-list">autocomplete-html.</span></li>
+            <li><span class="answer-list">....</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div  id="htmlQ18" class="question">
+        <h2><span class="question">Tag omission in text/html</span></h2>
+        <div id="htmlA18" class="answer">
+          <p><span class="paragraph-answer"> A non-normative description of whether, in the text/html syntax, the start and end tags can be omitted. This information is redundant with the normative requirements given in the optional tags section, and is provided in the element definitions only as a convenience.</span></p>
+        </div>
+      </div>
+
+      <div id="htmlQ19" class="question">
+        <h2><span class="question">What is an empty element?</span></h2>
+        <div id="htmlA19" class="answer">
+          <p><span class="paragraph-answer"> HTML elements with no content are called empty elements.<br>
+            &lt;br&gt; is an empty element without a closing tag (the &lt;br&gt; tag defines a line break).<br>
+            Empty elements can be &quot;closed&quot; in the opening tag like this: &lt;br /&gt;.<br>
+            HTML5 does not require empty elements to be closed. But if you want stricter validation, or if you need to make your document readable by XML parsers, you must close all HTML elements properly..</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <p><strong>Contributor:</strong> Rami Daoud</p>
+      </div>
+
+    </body>
+    </html>
