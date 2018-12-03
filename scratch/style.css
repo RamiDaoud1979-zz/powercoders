@@ -1,3 +1,14 @@
+p.warning {
+  background-color: red;
+  color: white;
+  font-style: bold;
+  padding: .5em 1em;
+  border-radius: 5px;
+  text-shadow: 1px 1px 1px black;
+}
+p.warning::before {
+  content: "Warning!: "
+}
 p em {
   font-style: normal; /*that cancelled the italic style of the em element*/
   text-decoration: underline;
