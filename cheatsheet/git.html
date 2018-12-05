@@ -4,127 +4,129 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Oswald|Slabo+27px" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Git cheatsheet</title>
 </head>
-<body>
+<body style="border: none; line-height: 2.5; ">
   <div id="header">
     <p><a href="index.html">Index</a> : Git cheatsheet </p>
   </div>
 
-  <div id="content"><table border="1">
-    <tr>
-      <th>Command</th>
-      <th>-Note</th>
-    </tr>
-    <tr>
-      <td>$ sudo apt-get install git</td>
-      <td>-installed git</td>
-    </tr>
-    <tr>
-      <td>$ git --version</td>
-      <td>-made sure that git was correctly installed</td>
-    </tr>
-    <tr>
-      <td>$ git config --global user.email rami.daoud@powercoders.org</td>
-      <td>-Configuring Git with a couple of pieces of information it's going to need later. (step1)</td>
-    </tr>
-    <tr>
-      <td>$ git config --global user.name "Rami Daoud"</td>
-      <td>-Configuring git (step2)</td>
-    </tr>
-    <tr>
-      <td>$ cd poco      </td>
-      <td>-Navigate to the poco directory<br>-Git needs to know where the top, or root, of the repository is going to be. Once you do this Git can start to manage all the files in that directory, and all the directories below.<br>-You can have multiple Git repositories on your computer, as long as they are not inside one another.<br></td>
-    </tr>
-    <tr>
-      <td>$ pwd</td>
-      <td>-Make sure you're in the correct directory with pwd</td>
-    </tr>
-    <tr>
-      <td>$ git init</td>
-      <td>-We have to tell Git where the "root" of the repository is by git init,But don't put a repository inside another</td>
-    </tr>
-    <tr>
-      <td>$  git status</td>
-      <td>-Checking the state of the repository</td>
-    </tr>
-    <tr>
-      <td>$  cd scratch</td>
-      <td>-Moving down to scratch directory to experiment</td>
-    </tr>
-    <tr>
-      <td>$  git add index.html</td>
-      <td>-Adding the scratch/index.html file to the index.</td>
-    </tr>
-    <tr>
-      <td>$  git status</td>
-      <td>-Now Git is telling us that there are changes to be committed to the repository. These changes have not yet been committed, we still need to do that, which is the next step.<br>-Remember, this file has been copied to the index. The git rm example it's showing is the command you would run if you changed your mind, and wanted to remove the file from the index.<br>-This wouldn't delete it from the working directory, just the index.</td>
-    </tr>
-    <tr>
-      <td>$  git commit -m "save first version of file."</td>
-      <td>-To make a copy of the file, or files, in the index, and save them in the repository we use git commit.<br>-Git needs us to give a message that is associated with the commit.<br>-Here, I'm using the -m flag to specify the commit message.<br>-If you don't do that then Git will open a text editor to allow you to type in a message.<br> -Don't forget the double quotes.</td>
-    </tr>
-    <tr>
-      <td>$  git status</td>
-      <td>-What do you see?</td>
-    </tr>
-    <tr>
-      <td>$  git log</td>
-      <td>-Shows you what's changed<br>-Edit scratch/index.html. Add anything you like<br></td>
-    </tr>
-    <tr>
-      <td>$  git diff</td>
-      <td>-This shows the difference between what's in the working directory and what's in the index. and if the index is empty then it compares to the copy in the repository<br>This command is optional like the git status</td>
-    </tr>
-    <tr>
-      <td>$  cd cheatsheet</td>
-      <td>-Navigating to the directory we are about to add its files to the index</td>
-    </tr>
-    <tr>
-      <td>$  git status</td>
-      <td>-Now Git is telling us that there are changes to be committed to the repository. These changes have not yet been committed, we still need to do that, which is the next step.</td>
-    </tr>
-    <tr>
-      <td>$  git add html.html index.html git.html shell.html</td>
-      <td>-Adding the certain files in the cheatsheet directory to the index.</td>
-    </tr>
-    <tr>
-      <td>$  git status</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>$  git diff --cached</td>
-      <td>This helps if you want to compare the working directory with the copy in the index</td>
-    </tr>
-    <tr>
-      <td>$  git commit -m "start my cheatsheet"</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>$  git log</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>$  cd ..</td>
-      <td>-Moving up to the poco directory (is this necessary for the next step?yes better be in the root before you add the origin)</td>
-    </tr>
-    <tr>
-      <td>$  git remote add origin https://github.com/RamiDaoud1979/powercoders.git</td>
-      <td>-We do this step after we already created a repository on Github website<br>-git remote add command tells your local repository about remotes (copies of your repository that are stored else where)<br>-This is also the URL for the repository in the browser, with .git added to the end, so you can cut and paste.<br>-The origin in the command is the short-name that we're going to use for the remote.<br>-You can use anything you want. However, the convention in Git is that the public version of the repository is called origin</td>
-    </tr>
-    <tr>
-   <td>$ git remote -v</td>
-   <td>To view configured remotes</td>
- </tr>
- <tr>
-     <td>$ git push -u origin master <br>$ git push </td>
-     <td>-Now that your local repository is configured to sync with the repository on GitHub we can copy all of our commits so far to the copy of the repository on GitHub.<br>-To do that, run the git push command.<br>-The very first time we do this we have to tell Git exactly how these two repositories are linked, including how they branch.<br>-You will probably be prompted for the password for your GitHub account.</td>
-   </tr>
-  </table></div>
+  <div id="content"><table style="border-radius: 15px; border: 4px solid #6f93addb; border-spacing: 10px;">
+  <tr>
+    <th>Command</th>
+    <th>-Note</th>
+  </tr>
+  <tr>
+    <td>$ sudo apt-get install git</td>
+    <td>-installed git</td>
+  </tr>
+  <tr>
+    <td>$ git --version</td>
+    <td>-made sure that git was correctly installed</td>
+  </tr>
+  <tr>
+    <td>$ git config --global user.email rami.daoud@powercoders.org</td>
+    <td>-Configuring Git with a couple of pieces of information it's going to need later. (step1)</td>
+  </tr>
+  <tr>
+    <td>$ git config --global user.name "Rami Daoud"</td>
+    <td>-Configuring git (step2)</td>
+  </tr>
+  <tr>
+    <td>$ cd poco      </td>
+    <td>-Navigate to the poco directory<br>-Git needs to know where the top, or root, of the repository is going to be. Once you do this Git can start to manage all the files in that directory, and all the directories below.<br>-You can have multiple Git repositories on your computer, as long as they are not inside one another.<br></td>
+  </tr>
+  <tr>
+    <td>$ pwd</td>
+    <td>-Make sure you're in the correct directory with pwd</td>
+  </tr>
+  <tr>
+    <td>$ git init</td>
+    <td>-We have to tell Git where the "root" of the repository is by git init,But don't put a repository inside another</td>
+  </tr>
+  <tr>
+    <td>$  git status</td>
+    <td>-Checking the state of the repository</td>
+  </tr>
+  <tr>
+    <td>$  cd scratch</td>
+    <td>-Moving down to scratch directory to experiment</td>
+  </tr>
+  <tr>
+    <td>$  git add index.html</td>
+    <td>-Adding the scratch/index.html file to the index.</td>
+  </tr>
+  <tr>
+    <td>$  git status</td>
+    <td>-Now Git is telling us that there are changes to be committed to the repository. These changes have not yet been committed, we still need to do that, which is the next step.<br>-Remember, this file has been copied to the index. The git rm example it's showing is the command you would run if you changed your mind, and wanted to remove the file from the index.<br>-This wouldn't delete it from the working directory, just the index.</td>
+  </tr>
+  <tr>
+    <td>$  git commit -m "save first version of file."</td>
+    <td>-To make a copy of the file, or files, in the index, and save them in the repository we use git commit.<br>-Git needs us to give a message that is associated with the commit.<br>-Here, I'm using the -m flag to specify the commit message.<br>-If you don't do that then Git will open a text editor to allow you to type in a message.<br> -Don't forget the double quotes.</td>
+  </tr>
+  <tr>
+    <td>$  git status</td>
+    <td>-What do you see?</td>
+  </tr>
+  <tr>
+    <td>$  git log</td>
+    <td>-Shows you what's changed<br>-Edit scratch/index.html. Add anything you like<br></td>
+  </tr>
+  <tr>
+    <td>$  git diff</td>
+    <td>-This shows the difference between what's in the working directory and what's in the index. and if the index is empty then it compares to the copy in the repository<br>This command is optional like the git status</td>
+  </tr>
+  <tr>
+    <td>$  cd cheatsheet</td>
+    <td>-Navigating to the directory we are about to add its files to the index</td>
+  </tr>
+  <tr>
+    <td>$  git status</td>
+    <td>-Now Git is telling us that there are changes to be committed to the repository. These changes have not yet been committed, we still need to do that, which is the next step.</td>
+  </tr>
+  <tr>
+    <td>$  git add html.html index.html git.html shell.html</td>
+    <td>-Adding the certain files in the cheatsheet directory to the index.</td>
+  </tr>
+  <tr>
+    <td>$  git status</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>$  git diff --cached</td>
+    <td>This helps if you want to compare the working directory with the copy in the index</td>
+  </tr>
+  <tr>
+    <td>$  git commit -m "start my cheatsheet"</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>$  git log</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>$  cd ..</td>
+    <td>-Moving up to the poco directory (is this necessary for the next step?yes better be in the root before you add the origin)</td>
+  </tr>
+  <tr>
+    <td>$  git remote add origin https://github.com/RamiDaoud1979/powercoders.git</td>
+    <td>-We do this step after we already created a repository on Github website<br>-git remote add command tells your local repository about remotes (copies of your repository that are stored else where)<br>-This is also the URL for the repository in the browser, with .git added to the end, so you can cut and paste.<br>-The origin in the command is the short-name that we're going to use for the remote.<br>-You can use anything you want. However, the convention in Git is that the public version of the repository is called origin</td>
+  </tr>
+  <tr>
+    <td>$ git remote -v</td>
+    <td>To view configured remotes</td>
+  </tr>
+  <tr>
+    <td>$ git push -u origin master <br>$ git push </td>
+    <td>-Now that your local repository is configured to sync with the repository on GitHub we can copy all of our commits so far to the copy of the repository on GitHub.<br>-To do that, run the git push command.<br>-The very first time we do this we have to tell Git exactly how these two repositories are linked, including how they branch.<br>-You will probably be prompted for the password for your GitHub account.</td>
+  </tr>
+</table></div>
 
-  <div id="footer">
-    <p><strong>Contributor:</strong> Rami Daoud</p>
-  </div>
+<div id="footer">
+  <p><strong>Contributor:</strong> Rami Daoud</p>
+</div>
 </body>
 </html>
 <!-- on github you can leave a comment on a certain line or the whole file -->
