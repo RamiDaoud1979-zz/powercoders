@@ -18,7 +18,7 @@ h1 {
   font-size: 2em;
   margin: 0;
   padding: 0;
-  padding-left: 35%;
+  padding-left: 12%;
 }
 
 p {
@@ -41,9 +41,9 @@ p {
 
 img {
   position: relative;
-  right: -40%;
-  border-radius: 15px;
-  width: 189px;
+right: -4%;
+border-radius: 15px;
+width: 447px;
 }
 
 #personal {
