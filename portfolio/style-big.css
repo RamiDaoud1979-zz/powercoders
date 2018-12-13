@@ -24,18 +24,17 @@ p {
   margin-left: 1em;
 }
 
-ul.breadcrumb li {
-  display: inline;
-}
-
 ul.breadcrumb li::before {
-  content: " | ";
-}
-
-ul.breadcrumb li:first-child::before {
   content: "";
+  display: inline-block;
+  min-width: 1em;
+  padding-left: 0;
 }
 
+ul {
+  padding-left: 20px;
+  text-align: left;
+}
 #header {
   position:relative;
   text-transform: uppercase;
@@ -49,17 +48,17 @@ ul.breadcrumb li:first-child::before {
 
 #content {
   position: absolute;
-  top: 48%;
+  top: 49%;
 }
 
 #photo {
   position: absolute;
-  top: 21%;
+  top: 14%;
   right: 2%;
 }
 
 img {
-  width: 193px;
+  width: 309px;
   border-radius: 15px;
 }
 
