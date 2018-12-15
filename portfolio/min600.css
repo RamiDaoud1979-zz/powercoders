@@ -1,0 +1,48 @@
+
+body {
+  padding-bottom: 31%;
+  margin-left:auto;
+  margin-right:auto;
+  padding-right: 24%;
+}
+
+#photo {
+  position: absolute;
+  top: 5%;
+  right: 4%;
+  text-align: right;
+}
+
+img {
+  width: 32%;
+}
+
+#edu2jobrelated {
+  position: absolute;
+  top: 26%;
+  left: 51%;
+  width: 58%;
+}
+
+#education {
+  width: 75%;
+}
+
+#languages {
+  width: 84%;
+}
+
+#job-social {
+  width: 79%;
+}
+
+#software {
+  position: absolute;
+  width: 82%;
+}
+
+#hobbies {
+  width: 35%;
+}
+
+

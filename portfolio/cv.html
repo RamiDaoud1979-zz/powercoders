@@ -7,22 +7,17 @@
 
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-  <link rel="stylesheet" href="style-smaller.css"
-  media="screen and (min-width: 1px) and (max-width: 300px)">
+  <link rel="stylesheet" href="min300.css"
+  media="screen and (min-width: 300px)">
 
-  <link rel="stylesheet" href="style-small.css"
-  media="screen and (min-width: 301px) and (max-width: 600px)">
+  <link rel="stylesheet" href="min600.css"
+  media="screen and (min-width: 600px)">
 
-  <link rel="stylesheet" href="style-normal.css"
-  media="screen and (min-width: 601px) and (max-width: 900px)">
-
-  <link rel="stylesheet" href="style-big.css"
-  media="screen and (min-width: 901px) and (max-width: 3000px)">
+  <link rel="stylesheet" href="min900.css"
+  media="screen and (min-width: 900px)">
 </head>
 
 <body>
-  <p id="smaller-resolution">please use a screen wider than 300 pixels</p>
-
   <div id="header">
     <h1>rami daoud</h1>
   </div>
@@ -34,22 +29,27 @@
   </div>
 
   <div id="personal">
-    <h2>personal information</h2>
+    <h2>personal info</h2>
 
-    <p>Dammerkirchstrasse 2, 4056 Basel City (Switzerland)</p>
+    <p>Dammerkirchstrasse 2, 4056, Basel City</p>
 
-    <p>(+41) 75 417 9821</p>
+    <p>
+      <a href="tel:+41-75-417-9821">(+41) 75 417 9821</a>
+    </p>
 
     <p>
       <a href="mailto:rami.daoud@powercoders.org">rami.daoud@powercoders.org</a>
     </p>
 
     <p>
-      <a href="https://github.com/RamiDaoud1979">Github: https://github.com/RamiDaoud1979</a>
+      <a href="https://www.flickr.com/photos/132413268@N04/albums/72157696104039922https://www.flickr.com/photos/132413268@N04/albums/72157696104039922">Photography Sample</a>
     </p>
+  </div>
 
+  <div id="accounts">
     <p>
-      <a href="https://www.flickr.com/photos/132413268@N04/albums/72157696104039922https://www.flickr.com/photos/132413268@N04/albums/72157696104039922">Photography work smple:</a>
+      <a href="https://github.com/RamiDaoud1979"><img id="github" src="https://github.githubassets.com/images/modules/open_graph/github-mark.png" alt="Github logo"></a>
+      <a href="https://www.linkedin.com/in/rami-daoud-755ab4110/"><img id="linkedin" src="data:image/png;base64,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" alt="linkedin logo"></a>
     </p>
   </div>
 
@@ -72,56 +72,74 @@
       <h2>work experience</h2>
 
       <ul class="breadcrumb">
-        <li>2017 - Current &nbsp;Photographing events.</li>
-        <li>2000 - Current &nbsp;Computer Maintenance.</li>
-        <li>2013 - 2015 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Call-centre pharmacist - Giving prior-approval on medications, out-of-Hospital services. GlobeMed.</li>
-        <li>2010 - 2013 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pharmacist.</li>
-        <li>2009 - 2010 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interpreter IOM.</li>
-        <li>2007 - 2011 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assistant Pharmacist at CVS pharmacy.</li>
+        <li>2017 - Current</li>
+        <ul class="breadcrumb2">
+          <li>Photography</li>
+        </ul>
+        <li>2000 - Current</li>
+        <ul class="breadcrumb2">
+          <li>Computer Maintenance.</li>
+        </ul>
+        <li>2013 - 2015</li>
+        <ul class="breadcrumb2">
+          <li>Insurance Pharmacist</li>
+        </ul>
+        <li>2010 - 2013</li>
+        <ul class="breadcrumb2">
+          <li>Pharmacist</li>
+        </ul>
+        <li>2009 - 2010</li>
+        <ul class="breadcrumb2">
+          <li>Interpreter</li>
+        </ul>
+        <li>2007 - 2011</li>
+        <ul class="breadcrumb2">
+          <li>Pharmacist</li>
+        </ul>
       </ul>
 
     </div>
 
-    <div id="education">
-      <h2>education and training</h2>
+    <div id="edu2jobrelated">
+      <div id="education">
+        <h2>education - training</h2>
 
-      <ul class="breadcrumb">
-        <li>2018 - current Powercoders bootcamp - HTML | CSS | JS | Github (Switzerland).</li>
-        <li>2017 - 2018 &nbsp;&nbsp;&nbsp;Online Courses - SQL inquiry | Frontend</li>
-        <li>2011 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Syrian Pharmacist National License.</li>
-        <li>2005 - 2007 &nbsp;&nbsp;&nbsp;Purdue University - Pharm.D (USA).</li>
-        <li>1997 - 2004 &nbsp;&nbsp;&nbsp;Ajman University - B.Sc Pharmaceutical and Health Sciences (UAE).</li>
-      </ul>
+        <ul class="breadcrumb">
+          <li>2018 - current<br> Powercoders bootcamp - HTML | CSS | JS | Github.</li>
+          <li>2017 - 2018<br>Online Courses - SQL inquiry | Frontend</li>
+          <li>2011<br>Syrian Pharmacist National License.</li>
+          <li>2005 - 2007<br>Purdue University - Pharm.D (USA).</li>
+          <li>1997 - 2004<br>Ajman University - B.Sc Pharmaceutical and Health Sciences (UAE).</li>
+        </ul>
+      </div>
 
-    </div>
+      <div id="languages">
+        <h2>languages</h2>
 
-    <div id="languages">
-      <h2>languages</h2>
+        <p>English C1 | German A2 | Arabic: Mother tongue</p>
+      </div>
 
-      <p>English C1 | German A2 | Arabic: Mother tongue</p>
-    </div>
+      <div id="job-social">
+        <h2>Job-related and Social skills</h2>
 
-    <div id="job-social">
-      <h2>Job-related and Social skills</h2>
+        <p>Good command of verbal/written communication, translation.</p>
 
-      <p>Good command of verbal/written communication, translation.</p>
-
-      <p>Confident, dynamic, energetic, infectious, Inventor, Strategist, Protector.</p>
-    </div>
+        <p>Confident, dynamic, energetic, infectious, Inventor, Strategist, Protector.</p>
+      </div>
 
     <div id="software">
-      <h2>software skills</h2>
+      <h2>Digital skills</h2>
 
       <ul class="breadcrumb">
-        <li>Operating Systems: &nbsp;&nbsp;Linux | Windows.</li>
-        <li>Office tools: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Libreoffice | MS Office.</li>
-        <li>Frontend : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Github | Atom | Command line.</li>
-        <li>Photography: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rawtherapy | lightroom | Darktable.</li>
-        <li>Video Broadcasting: Camtasia 2018 | OBS studio.</li>
-        <li>Audio editing: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ableton | Audacity.</li>
+        <li>Linux | Windows. (Maintenance)</li>
+        <li>Libreoffice | MS Office.</li>
+        <li>HTML | CSS | JS | VDS: Github | Atom | Command line.</li>
+        <li>Rawtherapy | lightroom | Darktable.</li>
+        <li>Camtasia 2018 | OBS studio.</li>
+        <li>Ableton | Audacity.</li>
       </ul>
-
     </div>
+</div>
 
     <div id="hobbies">
       <h2>hobbies</h2>
@@ -133,6 +151,5 @@
       <p><a href="https://www.mycloud.ch/s/S00057A05ABAFCF56A398E457427DDDA5913E9BCD34" class="link">Download Certificates</a></p>
     </div>
   </div>
-
 </body>
 </html>
