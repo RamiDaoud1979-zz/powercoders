@@ -2,11 +2,11 @@ body {
   font-family: "Helvetica", "Arial", sans-serif;
   position: relative;
   line-height: 1.5;
-  padding: 4%;
   width: 92%;
   background-color: #40383b0a;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 11%;
 }
 
 dt {
@@ -25,59 +25,24 @@ dd {
 }
 
 h2 {
-  margin-top: 1em;
-  padding-top: 1em;
+  margin: 0;
+  padding: 0;
 }
 
-#recipe-1 img {
-  position: absolute;
-  right: 1%;
-  top: 1%;
+#recipe-1 img, #recipe-2 img, #recipe-3 img {
   border-radius: 15px;
-  border: 4px solid rgb(113, 115, 30);
-  width: 123px;
+  border: 1px solid rgb(43, 43, 43);
+  width: 25%;
   box-shadow: 3px 3px 9px rgb(113, 115, 30);
 }
 
-#recipe-2 img {
-  position: absolute;
-  right: 1%;
-  top: 1%;
-  border-radius: 15px;
-  border: 4px solid rgb(113, 115, 30);
-  width: 123px;
-  box-shadow: 3px 3px 9px rgb(113, 115, 30);
-}
-
-#recipe-3 img {
-  position: absolute;
-  right: 20%;
-  top: 1%;
-  border-radius: 15px;
-  border: 4px solid rgb(113, 115, 30);
-  width: 84px;
-  box-shadow: 3px 3px 9px rgb(113, 115, 30);
-}
-
-.recipes {
-  border: 2px solid rgb(107, 58, 0);
-  border-radius: 17px;
-  margin: 0.40em;
-  padding-left: 0.75em;
-  padding-right: 2em;
+#photo-1, #photo-2, #photo-3 {
+  text-align: center;
 }
 
 p {
   margin-left: 1em;
   margin-right: 0em;
-}
-
-#ingredients {
-
-}
-
-#columns {
-  position: relative;
 }
 
 #calories, #ingredients {
@@ -89,28 +54,38 @@ p {
   left: 250px;
 }
 
-#smaller-resolution {
-  display: none;
-}
-
 #content {
   width: 99%;
+}
+
+.recipes {
+  max-width: 960px;
+  padding-bottom: 4%;
+  border: 1px solid rgb(43, 43, 43);
+  border-radius: 17px;
+  margin: 0.40em;
+  padding-left: 0.75em;
+  padding-right: 2em;
+
 }
 
 #recipe-1 {
   background-color: rgb(213, 112, 69, .5);
   box-shadow: 3px 3px 9px rgb(36, 62, 88);
-  max-width: 960px;
-  padding-bottom: 4%;
 }
 
-#recipe-2 {
+#recipe-2
+{
   background-color: rgb(240, 133, 7);
   box-shadow: 3px 3px 9px rgb(36, 62, 88);
 }
 
-#recipe-3 {
+#recipe-3
+{
   background-color: rgb(255, 215, 42);
   box-shadow: 3px 3px 9px rgb(113, 115, 30);
-  border: 4px solid rgb(113, 115, 30);
+}
+
+#header-1, #header-2, #header-3  {
+  text-align: center;
 }
