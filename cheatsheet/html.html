@@ -378,6 +378,124 @@
         </div>
       </div>
 
+      After the css selector there is a block of declarations, Clarify?
+      The block starts and ends with the opening and closing curly brackets.
+
+Inside the block are three declarations. Each declaration is the name of a property, a colon, and the value for the property. And then finished with a semi-colon.
+
+what is em unit?
+
+An "em" is a special distance – it's the width of the letter m in whichever font and size you are using. So if you have a big font 2ems is wider than 2ems in smaller font.
+
+What should you avoid in external css file?
+
+Avoids mixing different syntaxes in the same file
+
+Give example of:
+selecting all element of a particular type? p
+
+one element using ID? p#love
+
+Selecting elements based on container? em
+
+We only wanted the em in the p, but we got the one in the li as well, how to fix that? p em | Our selector is now more specific, saying that it only matches em elements that are inside p elements.
+
+How to style element of a particular class?
+
+<pre> <code>
+&lt;body&gt;
+  &lt;h1&gt;A heading&lt;/h1&gt;
+
+  &lt;p&gt;A paragraph of text. It has some &lt;em&gt;emphasised content&lt;/em&gt;.&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Bread&lt;/li&gt;
+    &lt;li&gt;Milk (&lt;em&gt;Low fat&lt;/em&gt;)&lt;/li&gt;
+    &lt;li class=&quot;important&quot;&gt;Eggs&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p class=&quot;warning&quot;&gt;This is a warning.&lt;/p&gt;
+
+  &lt;p id=&quot;footer&quot;&gt;This paragraph is a footer.&lt;/p&gt;
+&lt;/body&gt;
+</pre> </code>
+
+<pre> <code>
+p.warning {
+  background-color: red;
+  color: white;
+  font-style: bold;
+  padding: .5em 1em;
+  border-radius: 5px;
+  text-shadow: 1px 1px 1px black;
+}
+
+p.warning::before {
+  content: &quot;WARNING!: &quot;
+}
+
+p em {
+  font-style: normal;
+  text-decoration: underline;
+}
+
+p#footer {
+  border-top: 1px solid black;
+  background-color: white;
+  padding-top: .5em;
+  margin-left: 0;
+}
+
+p {
+  color: red;
+  background-color: lightgrey;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+</code> </pre>
+
+id attribute?
+All elements support the id attribute
+Value is an arbitrary string
+Value must be unique in the HTML
+Use for things that appear at most once
+<pre>
+  <code>
+    &lt;div id=&quot;header&quot;&gt;...&lt;/div&gt;
+
+&lt;div id=&quot;main-content&quot;&gt;...&lt;/div&gt;
+
+&lt;p&gt;&lt;span id=&quot;author&quot;&gt;...&lt;/span&gt;
+   &lt;span id=&quot;publish-date&quot;&gt;...&lt;/span&gt;
+   &lt;span id=&quot;category&quot;&gt;...&lt;/span&gt;&lt;/p&gt;
+  </code>
+</pre>
+
+class attribute?
+All elements support the class attribute
+Value is an arbitrary string
+Value does not need to be unique in the HTML
+Use for things that might appear multiple times
+<pre>
+  <code>
+    &lt;p class=&quot;warning&quot;&gt;...&lt;/p&gt;
+
+&lt;pre class=&quot;html&quot;&gt;...&lt;/p&gt;
+
+&lt;pre class=&quot;css&quot;&gt;...&lt;/p&gt;
+
+&lt;img class=&quot;screenshot&quot;&gt;
+  </code>
+</pre>
+
+
+
+
+
+
+
+
+
       <div id="footer">
         <p><strong>Contributor:</strong> Rami Daoud</p>
       </div>

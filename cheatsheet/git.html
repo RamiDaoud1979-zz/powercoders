@@ -56,7 +56,7 @@
       </tr>
 
       <tr>
-        <td>$  git status</td>
+        <td>$ git status</td>
         <td>-Checking the state of the repository</td>
       </tr>
 
@@ -76,67 +76,67 @@
       </tr>
 
       <tr>
-        <td>$  git commit -m "save first version of file."</td>
+        <td>$ git commit -m "save first version of file."</td>
         <td>-To make a copy of the file, or files, in the index, and save them in the repository we use git commit.<br>-Git needs us to give a message that is associated with the commit.<br>-Here, I'm using the -m flag to specify the commit message.<br>-If you don't do that then Git will open a text editor to allow you to type in a message.<br> -Don't forget the double quotes.</td>
       </tr>
 
       <tr>
-        <td>$  git status</td>
+        <td>$ git status</td>
         <td>-What do you see?</td>
       </tr>
 
       <tr>
-        <td>$  git log</td>
+        <td>$ git log</td>
         <td>-Shows you what's changed<br>-Edit scratch/index.html. Add anything you like<br></td>
       </tr>
 
       <tr>
-        <td>$  git diff</td>
+        <td>$ git diff</td>
         <td>-This shows the difference between what's in the working directory and what's in the index. and if the index is empty then it compares to the copy in the repository<br>This command is optional like the git status</td>
       </tr>
 
       <tr>
-        <td>$  cd cheatsheet</td>
+        <td>$ cd cheatsheet</td>
         <td>-Navigating to the directory we are about to add its files to the index</td>
       </tr>
 
       <tr>
-        <td>$  git status</td>
+        <td>$ git status</td>
         <td>-Now Git is telling us that there are changes to be committed to the repository. These changes have not yet been committed, we still need to do that, which is the next step.</td>
       </tr>
 
       <tr>
-        <td>$  git add html.html index.html git.html shell.html</td>
+        <td>$ git add html.html index.html git.html shell.html</td>
         <td>-Adding the certain files in the cheatsheet directory to the index.</td>
       </tr>
 
       <tr>
-        <td>$  git status</td>
+        <td>$ git status</td>
         <td></td>
       </tr>
 
       <tr>
-        <td>$  git diff --cached</td>
+        <td>$ git diff --cached</td>
         <td>This helps if you want to compare the working directory with the copy in the index</td>
       </tr>
 
       <tr>
-        <td>$  git commit -m "start my cheatsheet"</td>
+        <td>$ git commit -m "start my cheatsheet"</td>
         <td></td>
       </tr>
 
       <tr>
-        <td>$  git log</td>
+        <td>$ git log</td>
         <td></td>
       </tr>
 
       <tr>
-        <td>$  cd ..</td>
-        <td>-Moving up to the poco directory (is this necessary for the next step?yes better be in the root before you add the origin)</td>
+        <td>$ cd ..</td>
+        <td>-Moving up to the poco directory (is this necessary for the next step? yes better be in the root before you add the origin)</td>
       </tr>
 
       <tr>
-        <td>$  git remote add origin https://github.com/RamiDaoud1979/powercoders.git</td>
+        <td>$ git remote add origin https://github.com/RamiDaoud1979/powercoders.git</td>
         <td>-We do this step after we already created a repository on Github website<br>-git remote add command tells your local repository about remotes (copies of your repository that are stored else where)<br>-This is also the URL for the repository in the browser, with .git added to the end, so you can cut and paste.<br>-The origin in the command is the short-name that we're going to use for the remote.<br>-You can use anything you want. However, the convention in Git is that the public version of the repository is called origin</td>
       </tr>
 
@@ -147,7 +147,7 @@
 
       <tr>
         <td>$ git push -u origin master <br>$ git push </td>
-        <td>-Now that    your local repository is configured to sync with the repository on GitHub we can copy all of our commits so far to the copy of the repository on GitHub.<br>-To do that, run the git push command.<br>-The very first time we do this we have to tell Git exactly how these two repositories are linked, including how they branch.<br>-You will probably be prompted for the password for your GitHub account.</td>
+        <td>-Now that your local repository is configured to sync with the repository on GitHub we can copy all of our commits so far to the copy of the repository on GitHub.<br>-To do that, run the git push command.<br>-The very first time we do this we have to tell Git exactly how these two repositories are linked, including how they branch.<br>-You will probably be prompted for the password for your GitHub account.</td>
       </tr>
     </table>
   </div>
