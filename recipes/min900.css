@@ -1,0 +1,30 @@
+#photo-1 {
+  top: 79%;
+  right: 3%;
+}
+
+#photo-2 {
+  top: 67%;
+  right: 3%;
+}
+
+#photo-3 {
+  top: 45%;
+  right: 3%;
+}
+
+#photo-1 img, {
+  top: 43%;
+}
+
+#photo-2 img, {
+  width: 30%;
+}
+
+#photo-3 img {
+  width: 27%;
+}
+
+#instruction {
+  width: 78%;
+}

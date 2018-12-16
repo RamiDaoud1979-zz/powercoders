@@ -61,29 +61,24 @@ p {
 .recipes {
   max-width: 960px;
   padding-bottom: 4%;
-  border: 1px solid rgb(43, 43, 43);
   border-radius: 17px;
+  border: 1px solid rgb(43, 43, 43);
   margin: 0.40em;
   padding-left: 0.75em;
   padding-right: 2em;
-
+  box-shadow: 3px 3px 9px rgb(36, 62, 88);
 }
 
 #recipe-1 {
   background-color: rgb(213, 112, 69, .5);
-  box-shadow: 3px 3px 9px rgb(36, 62, 88);
 }
 
-#recipe-2
-{
+#recipe-2 {
   background-color: rgb(240, 133, 7);
-  box-shadow: 3px 3px 9px rgb(36, 62, 88);
 }
 
-#recipe-3
-{
+#recipe-3 {
   background-color: rgb(255, 215, 42);
-  box-shadow: 3px 3px 9px rgb(113, 115, 30);
 }
 
 #header-1, #header-2, #header-3  {

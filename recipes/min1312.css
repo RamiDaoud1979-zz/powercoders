@@ -1,0 +1,9 @@
+#photo-1, #photo-2, #photo-3 {
+  position: static;
+  text-align: center;
+}
+
+#recipe-1 img, #recipe-2 img, #recipe-3 img {
+  width: 25%;
+}
+
