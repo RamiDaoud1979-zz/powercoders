@@ -1,0 +1,131 @@
+#columns {
+  position: relative;
+}
+
+#calories, #ingredients {
+  width: 250px;
+}
+
+#instruction {
+  top: 0;
+  left: 250px;
+}
+
+#smaller-resolution {
+  display: none;
+}
+
+dt {
+  display: inline;
+  font-weight: bold;
+  padding-left: 1em;
+}
+
+dt::after {
+  content: ": "
+}
+
+dd {
+  display: inline;
+  margin-inline-start: 0;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  padding: 4em 0em;
+  color: #555;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  width: 105%;
+  padding-left: 0%;
+  padding-bottom: 0%;
+}
+
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+#recipe-1 img {
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  border-radius: 15px;
+  border: 4px solid rgb(113, 115, 30);
+  width: 123px;
+  box-shadow: 3px 3px 9px rgb(113, 115, 30);
+}
+
+#recipe-2 img {
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  border-radius: 15px;
+  border: 4px solid rgb(113, 115, 30);
+  width: 123px;
+  box-shadow: 3px 3px 9px rgb(113, 115, 30);
+}
+
+#recipe-3 img {
+  position: absolute;
+  right: 20%;
+  top: 1%;
+  border-radius: 15px;
+  border: 4px solid rgb(113, 115, 30);
+  width: 84px;
+  box-shadow: 3px 3px 9px rgb(113, 115, 30);
+}
+
+.recipes {
+  border: 2px solid rgb(107, 58, 0);
+  border-radius: 17px;
+  margin: 0.40em;
+  padding-left: 0.75em;
+  padding-right: 2em;
+}
+
+#recipe-1 {
+  background-color: rgb(213, 112, 69, .5);
+  box-shadow: 3px 3px 9px rgb(36, 62, 88);
+  max-width: 960px;
+  padding-bottom: 4%;
+}
+
+#recipe-2 {
+  background-color: rgb(240, 133, 7);
+  box-shadow: 3px 3px 9px rgb(36, 62, 88);
+}
+
+#recipe-3 {
+  background-color: rgb(255, 215, 42);
+  box-shadow: 3px 3px 9px rgb(113, 115, 30);
+  border: 4px solid rgb(113, 115, 30);
+}
+
+p {
+  margin-left: 1em;
+  margin-right: 0em;
+}
+
+#content {
+  width: 99%;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  padding: 4em 0em;
+  color: #555;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  width: 63%;
+  padding-left: 0%;
+  padding-bottom: 4%;
+  padding-right: 0%;
+  padding-top: 3%;
+}
+
+#ingredients {
+
+}
