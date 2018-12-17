@@ -18,6 +18,8 @@
   media="screen and (min-width: 1312px)">
 
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Oswald|Slabo+27px" rel="stylesheet">
+  <script src="recipe.js"></script>
+
 </head>
 
 <body>
@@ -52,11 +54,14 @@
       </dl>
     </div>
 
+
     <div id="columns">
       <div id="calories">
-        <h3>calories</h3>
+        <h1><span id="hide-list1" class="show1" onclick="hide1(event);">v</span>
+          <span id="show-list1" class="hide1" onclick="show1(event);">&gt;</span>
+          calories</h1>
 
-        <ul>
+        <ul id="calories-list">
           <li><span class="calories-quantity">0</span><span class="calories-units"> g</span><span class="ingredients"> fat</span></li>
           <li><span class="calories-quantity">0</span><span class="calories-unite"> mg</span> <span class="ingredients"> cholesterol</span></li>
           <li><span class="calories-quantity">8.9m</span><span class="calories-units"> g</span><span class="ingredients"> sodium</span></li>
@@ -68,9 +73,9 @@
       </div>
 
       <div id="ingredients">
-        <h3>List of ingredients</h3>
+        <h1><span id="hide-list2" class="show2" onclick="hide2(event);">v</span><span id="show-list2" class="hide2" onclick="show2(event);">&gt;</span>ingredients</h1>
 
-        <ul>
+        <ul id="ingredient-list">
           <li><span class="ingredients-quantity">3</span><span class="ingredients-units"> cups</span> of cold water</li>
           <li><span class="ingredients-quantity">5</span>cinnamon<span class="ingredients-units"> sticks</span></li>
           <li><span class="ingredients-quantity">1</span><span class="ingredients-units"> bottle</span> Welch’s Sparkling Red or Sparkling White Grape Juice Cocktail,</li>
@@ -81,10 +86,10 @@
         </ul>
       </div>
 
-      <div id="instruction">
-        <h3>Instructions</h3>
+      <div id="instructions">
+        <h1><span id="hide-list3" class="show3" onclick="hide3(event);">v</span><span id="show-list3" class="hide3" onclick="show3(event);">&gt;</span>instructions</h1>
 
-        <ol>
+        <ol id="instruction-list">
           <li>In medium saucepan, combine water, sugar and cinnamon sticks to make cinnamon syrup. Heat to boiling over medium heat, stirring occasionally.</li>
           <li>Heat and simmer 5 minutes. Remove cinnamon sticks, cover and refrigerate two hours.</li>
           <li>In a large punch bowl, combine cinnamon syrup, Sparkling Red or Sparkling White Grape Juice Cocktail, orange juice, lemon juice and soda. Add ice cubes.</li>

@@ -84,3 +84,55 @@ p {
 #header-1, #header-2, #header-3  {
   text-align: center;
 }
+
+/*calories*/
+span.show1 {
+  display: inline-block;
+  width: 1em;
+}
+
+span.hide1 {
+  display: none;
+}
+
+ul.show1 {
+  display: block;
+}
+
+ul.hide1 {
+  display: none;
+}
+/*ingredients*/
+span.show2 {
+  display: inline-block;
+  width: 1em;
+}
+
+span.hide2 {
+  display: none;
+}
+
+ul.show2 {
+  display: block;
+}
+
+ul.hide2 {
+  display: none;
+}
+/* instruction*/
+span.show3 {
+  display: inline-block;
+  width: 1em;
+}
+
+span.hide3 {
+  display: none;
+}
+
+ol.show3 {
+  display: block;
+}
+
+ol.hide3 {
+  display: none;
+}
