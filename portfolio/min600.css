@@ -1,48 +1,33 @@
 
+
 body {
-  padding-bottom: 31%;
-  margin-left:auto;
-  margin-right:auto;
-  padding-right: 24%;
+  font-size: 177%;
 }
 
-#photo {
-  position: absolute;
-  top: 5%;
-  right: 4%;
-  text-align: right;
+.break {
+  display: none;
 }
 
-img {
-  width: 32%;
+/*
+.full-name {
+font-size: 1.5em;
 }
 
-#edu2jobrelated {
-  position: absolute;
-  top: 26%;
-  left: 51%;
-  width: 58%;
+.subtitle {
+font-size:0.8em;
+}
+.content-cat {
+font-size:1.1em;
 }
 
-#education {
-  width: 75%;
+.work-listing p {
+font-size:1em;
 }
 
-#languages {
-  width: 84%;
+p.work, p.edu, p.skills {
+font-size: 1.5em;
 }
 
-#job-social {
-  width: 79%;
-}
-
-#software {
-  position: absolute;
-  width: 82%;
-}
-
-#hobbies {
-  width: 35%;
-}
-
-
+.content-wrapper {
+padding-right: 7.25%;
+} */

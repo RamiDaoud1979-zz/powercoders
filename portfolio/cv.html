@@ -7,161 +7,496 @@
 
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-  <link rel="stylesheet" href="min300.css"
-  media="screen and (min-width: 300px)">
+  <link rel="stylesheet" href="style.css">
 
   <link rel="stylesheet" href="min600.css"
   media="screen and (min-width: 600px)">
 
-  <link rel="stylesheet" href="min900.css"
-  media="screen and (min-width: 900px)">
+  <link href="mediaprint.css"
+  media="print" rel="stylesheet"/>
 </head>
 
 <body>
-  <div id="header">
-    <h1>rami daoud</h1>
-  </div>
+  <div class="resume-wrapper">
+    <article class="paper">
+      <header>
+        <div class="header-content">
+          <div class="header-pic" title="Hi there! I'm Rami">
+            <div class="pic"></div>
+            <div class="pic-print"><img src="Rami.jpg" alt="Rami Daoud's Photo"></div>
+          </div>
+          <div class="header-text">
+            <p><span class="full-name">Rami Daoud</span></p>
+            <p class="subtitle">Aspiring Coder |BSc. Pharm. D.</p>
+          </div>
+        </div>
+      </header>
 
-  <div id="photo">
-    <p>
-      <img src="Rami.jpg" alt="Rami Daoud's Photo">
-    </p>
-  </div>
+      <div class="content-wrapper">
+        <!-- CONTACT -->
+        <section class="content">
+          <div class="row">
+            <div class="content-cat">
+              Contact
+            </div>
+            <div class="content-text">
+              <ul>
+                <li>Website</li>
+                <li><a href="https://github.com/RamiDaoud1979/powercoders/tree/master/portfolio" target="_blank">Portfolio</a>, </li>
+                <li><a href="https://github.com/RamiDaoud1979/powercoders/tree/master/recipes" target="_blank">Recipes</a>, </li>
+                <li><a href="https://github.com/RamiDaoud1979/powercoders/tree/master/cheatsheet" target="_blank">Cheatsheets</a></li>
+              </ul>
 
-  <div id="personal">
-    <h2>personal info</h2>
+              <ul>
+                <li>Email</li>
+                <li><a href="mailto:rami.daoud@powercoders.org" target="_blank">rami.daoud@powercoders.org</a></li>
+              </ul>
 
-    <p>Dammerkirchstrasse 2, 4056, Basel City</p>
+              <ul>
+                <li>Phone</li>
+                <li><a href="tel:+41-75-417-9821" target="_blank">(+41) 75 417 9821</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-    <p>
-      <a href="tel:+41-75-417-9821">(+41) 75 417 9821</a>
-    </p>
+        <!-- LOCATION -->
+        <section class="content">
+          <div class="row">
+            <div class="content-cat">
+              Location
+            </div>
 
-    <p>
-      <a href="mailto:rami.daoud@powercoders.org">rami.daoud@powercoders.org</a>
-    </p>
+            <div class="content-text">
+              <ul>
+                <li>Address</li>
+                <li><a href="https://goo.gl/maps/37FB8SoUVzD2" target="_blank">Dammerkirchstrasse 2, 4056 BS</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-    <p>
-      <a href="https://www.flickr.com/photos/132413268@N04/albums/72157696104039922https://www.flickr.com/photos/132413268@N04/albums/72157696104039922">Photography Sample</a>
-    </p>
-  </div>
+        <!-- PROFILES -->
+        <section class="content">
+          <div class="row">
+            <div class="content-cat">
+              Profiles
+            </div>
 
-  <div id="accounts">
-    <p>
-      <a href="https://github.com/RamiDaoud1979"><img id="github" src="https://github.githubassets.com/images/modules/open_graph/github-mark.png" alt="Github logo"></a>
+            <div class="content-text">
+              <ul>
+                <li>Skype</li>
+                <li><a href="skype:Ramiel_1">Ramiel_1</a></li>
+              </ul>
 
-      <a href="https://www.linkedin.com/in/rami-daoud-755ab4110/"><img id="linkedin" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEUAd7X///8AdLT8//8AbbAyhbxHk8PX6PIAcrNHkcIAb7F9r9K91ObE2ekAbLAAcbJxqM70+fxqosvq8/gigbrR4u+xzuOewdzf6/STvNkAereqyeCjxd48jMDI3et7q9CIs9RZmsdhn8pwcibiAAAF8UlEQVR4nO3d22KiMBAGYAjUYrRRxANiqeL7P+TqVldEyEzQbWbo/NeLy1dOSUiGIBx6At878N8jQv75fcJ0vS8LxTVBuZ+mVmG+0HGiAr5RSawXeacwmhvOumsSM4/ahXkx871zL8qsyNuEX4M4gN9R5utR+G5879ZLY96bwjQYzhE8RwVpQ3hMfO/Ti5Mc74WrYZ2j55jVnbAa1jl6jqrqwmx4h/B0ELOa8FP73p3/EL2rCRfDO0lPp+miJlwOUrisCYcIPBGHL4z+CSMR8owI+UeE/CNC/hEh/4iQf3oLlUoSxeFv0kuotF6O5ofJoiyMpq7sIUxMNc0ug3RRvlkSHyV3Fio9aby5Wo1Ij2C5Cs0oCx/yERAeSXYUms2j75S0ojtM5yY001bgKfP4B3a2V5yEtbdVj0SqR9FFaHbdwDAcEb2lOgiThQ0YpvyFQWQVhlOaDw28UH/agWFYkjyKeKGCgOEXyfspWjjbgsKw+Km9dglaGOd23TlbihNV0MIlDAxXFE9TrFDZHxXfiSg2T7FCzGUYhm8E76ZYoV5jhBTbNVhh/IERHkXoIa89SylOyEEL27u+jXC+06g5Ahj92G47BC18Qwhzir0LfKutZQSqmQ3Ffj5aCHeeaF6GeKGCG6Y0Jxjj+4dx5zjbNRSfhk49YOggEp1/6zBOow92IdGJf06jiSsbkOqAqdOIcGLp529onqOOQhV0Ej+pAh3fW6ikY1z/QBbo/nat7XaTlUSvwXOc35DqZbMflR5imnfR77i/5VZxsb1djtHXPKY4hnhLr5kKM7Ostp+73WYyVqSP3zl9Z5uomT6Fw0pTmTHEPyLkHxHyjwj5R4RecmowmTg+N5riODZPNp3ICZU2RXVYr/IsPSXL8tV6sx8XRvd9v+wiTOxp3dxtE6V1tWsdR8imk8L06sQ4CIuJPW3LiJcH6yb3c4yUKXfNujL15NuiR0/GYbwUejeTP87EUCP7JvPaqadMZR3L+5uPsbPxhcL3p4SmhH3nrErHKS1EhEqh3jH/zdrt1kpDaEa266+ZdOwy8EVCaFCTdWqZOAxeUhB2zx7vjMMANAGhxt1i7rNDE/0L4z7AMNxib6nehQY1FaklR2QLx7cwRs3TaQ3yfaVnYVz1BmKnDXgWapfnYDMH1HnqV3i0rlGBglxs51WIb6q1BlX2ya/w2WAWB/AWYqaZ8RamiMc+byGmPBlz4Qd8EJkLESs8mAsRpyl34Rq8m3IXwtUsuQvhHgZ74ZyTMJseFuXbcllWh4ea6p3ZQRciGWH0WZp4dqkbn8SmQvb9wZnJVIQb1SgDo8wYsf4B0XCjIczahuqVtpRwuAUA0hDmHeP0tioV/zIGbjUUhNms63/WiBN1DzTcKAi7H2mqhLeGFpATEB4s93vEgD/UbvMvtLa7EEvmoEoO/oVz63VkX+PR8d/SEqb2kyzZQz8Atb29C8FW15N/Iv9CaAk/WI8DGhf2LYSOALyIPAIGTX0LwYZzAqyYOz1OaQvBMd3rByq6A6zN9S0ER5LgJyJxIaK2FFCAC/oJ30LQFxiou09cCL/HNVD/Aug+eRYiPm1z+yoVSyHUqAwQs1FoCxEr3MGOPm0hoohdzFuIeDv2C4TQwClt4RR+ES9CEYpQhCIUoQhFKEIRilCEIhShCEUoQhGKUIQiFKEIRShCEYpQhCIUoQhFKEIRilCEIhShCEUoQhGK0JOwR6Xk8AMh/LF53kExGlvTtjoH2gbxTUhV2n9i9LL1h6d/C+RV27z2J8hVnX95RMg/IuQfEfKPCPlHhPwjQv75VcJwoMLwNwmJfv79uahlTYgojs0valETgmW3OEbvakJEoRF+uRR/uRRFq4Z3ml7LTF2EiEoj3HKtSngtbHfs+xlFqkmO4b0wDYZ1nqogbQix39/hklsFplv5xS8znKOoauWJagUm86LX1z4JRhe1opL1EprRfBCHMTHzeim7+yKh+ULHT32C13dUEuvFfVXQZhnUdL0vC+idD9kE5f6hLj9Y6JV9RMg/IuSfP35vi+m2ULyZAAAAAElFTkSuQmCC" alt="linkedin logo"></a>
-    </p>
-  </div>
+              <ul>
+                <li>Linkedin</li>
+                <li><a href="https://www.linkedin.com/in/rami-daoud-755ab4110/" target="_blank">@rami-daoud-755ab4110</a> </li>
+              </ul>
 
-  <div id="content">
-    <div id="summary">
-      <h2>summary</h2>
+              <ul>
+                <li>Github</li>
+                <li><a href="https://github.com/RamiDaoud1979" target="_blank">@RamiDaoud1979</a></li>
+              </ul>
 
-      <ul class="breadcrumb">
-        <li>working with command lines</li>
-        <li>version control systems</li>
-        <li>continuous integration</li>
-        <li>responsive design </li>
-        <li>front-end systems</li>
-        <li>debugging</li>
-        <li>server-side scripting</li>
-      </ul>
+              <ul>
+                <li>Khan Academy</li>
+                <li>
+                  <a href="https://www.khanacademy.org/profile/rx3210/vital-statistics" target="_blank">Achievements</a>
+                </li>
+              </ul>
+
+              <ul>
+                <li>Edx</li>
+                <li>
+                  <a href="https://credentials.edx.org/records/programs/shared/24756a54833e4de8b1c4801093135e4b/" target="_blank">Achievements</a>
+                </li>
+              </ul>
+
+              <ul>
+                <li>Sololearn</li>
+                <li>
+                  <a href="https://www.sololearn.com/Profile/11216928" target="_blank">Achievements</a>
+                </li>
+              </ul>
+
+              <ul>
+                <li>Youtube</li>
+                <li>
+                  <a href="https://www.youtube.com/edit?o=U&ar=2&video_id=zWBepkhVEmA" target="_blank">Steve vs Wozniak - Social Skills</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!--Work header-->
+        <header>
+          <div class="header-content">
+            <div class="header-text">
+              <p>
+                <span class="work">work</span>
+              </p>
+            </div>
+          </div>
+        </header>
+
+        <!--Work List-->
+        <section class="content">
+          <div class="row">
+            <div class="content-cat big-text">
+              Photo<span class="break">-</span>graphy
+              <p>2017 till today</p>
+            </div>
+            <div class="content-text work-listing">
+              <p>Indoor, Outdoor Events, Professional Headshots, Portraits</p>
+
+              <p class="highlight">Shooted Tedx Basel 2018</p>
+
+              <p class="highlight">Professional Headshots for Powercoders Participants</p>
+
+              <p class="highlight">Freelance - Basel</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content">
+          <div class="row">
+            <div class="content-cat big-text">
+              Technician
+              <p>2000 till today</p>
+            </div>
+
+            <div class="content-text work-listing">
+              <p>Troubleshooting Personal Computers software/hardware</p>
+
+              <p class="highlight">Optimizing performance of Legacy Laptops</p>
+
+              <p class="highlight">Freelance - UAE, Syria, Basel</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content">
+          <div class="row">
+            <div class="content-cat big-text">
+              Insurance<br>Pharmacist
+              <p>2013 - 2015</p>
+            </div>
+
+            <div class="content-text work-listing">
+              <p>Adjudicating Chronic Medication Claims</p>
+
+              <p class="highlight">Generating and Assessing Reports</p>
+
+              <p class="highlight">Customer Care</p>
+
+              <p class="highlight">Globemed - Syria</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content">
+          <div class="row">
+            <div class="content-cat big-text">
+              Community<br>Pharmacist
+              <p>2010 - 2013</p>
+            </div>
+
+            <div class="content-text work-listing">
+              <p>Medication dispensary</p>
+
+              <p class="highlight">Quality assurance</p>
+
+              <p class="highlight">Compounding</p>
+
+              <p class="highlight">Warehouse monitoring</p>
+
+              <p class="highlight">Community Pharmacies - Syria</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content">
+          <div class="row">
+            <div class="content-cat big-text">
+              Community<br>Pharmacist
+              <p>2007 - 2011</p>
+            </div>
+
+            <div class="content-text work-listing">
+              <p>Medication dispensary</p>
+
+              <p class="highlight">Clinically checked prescriptions daily  for appropriate dosage, drug interactions, allergies, and contraindications before dispensing medications</p>
+              <p class="highlight">Effectively resolved insurance rejections and other billing issues</p>
+
+              <p class="highlight">Inventory management</p>
+
+              <p class="highlight">Patient education and counseling</p>
+
+              <p class="highlight">Communicated regularly with physicians, nurses, insurance companies</p>
+
+              <p class="highlight">Created and updated patient profiles, including list of patient medications</p>
+
+              <p class="highlight">Helped customers locate desired items in pharmacy</p>
+
+              <p class="highlight">Community Pharmacies - USA</p>
+            </div>
+          </div>
+        </section>
+
+        <!--Education header-->
+        <header>
+          <div class="header-content">
+            <div class="header-text">
+              <p>
+                <span class="edu">education</span>
+              </p>
+            </div>
+          </div>
+        </header>
+
+        <!--Education list-->
+        <section class="content">
+          <div class="row">
+            <div class="content-cat">
+              frontend -<span class="break"></span>Job skills bootcamp
+              <p>2018 till today</p>
+            </div>
+
+            <div class="content-text work-listing education-listing">
+              <p class="heading">Powercoders for Refugees</p>
+
+              <p class="highlight">Frontend web design course covering HTML, CSS, JavaScript and related
+                technologies including web frameworks, Node, SQL, version control (Git and
+                GitHub) and project management.</p>
+
+                <p class="highlight">Job-related, Social, Communication skills</p>
+
+                <p class="highlight">Powercoders is a coding academy for refugees. It consists of a coding bootcamp of 13 weeks and an internship that lasts 6 to 12 months. It all started in Switzerland. The ultimate goal of Powercoders is the permanent placement of trained refugees in IT-companies and IT-departments.</p>
+
+                <p class="highlight"><a href="powercoders.org"></a></p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="content-cat">
+                Frontend <br>development<br> Math<br> Sql inquiry<br> Statistics
+                <p>2017 till today</p>
+              </div>
+              <div class="content-text work-listing education-listing">
+
+                <p class="heading">Edx , Sololearn, Microsoft professional program for Data science, Khan Academy</p>
+
+                <p class="highlight">These courses include videos,  text tutorials, and interactive quizzes that tackle HTML | CSS | JS | Math | Sql inquiry | excel and statistics</p>
+
+                <p class="highlight">Online</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="content-cat">
+                Pharm.D
+                <p>2005 - 2007</p>
+              </div>
+
+              <div class="content-text work-listing education-listing">
+                <p class="heading">Purdue University - Pharm.D</p>
+
+                <p class="highlight">PharmD program graduate who conducted advanced pharmaceutical research and numerous prescription drug interaction assessments</p>
+
+                <p class="heading">United States</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="content-cat">
+                B.Sc<br>Pharmaceutical<br>and &nbsp;<span class="break"></span>Health Sciences
+                <p>1997 - 2004</p>
+              </div>
+
+              <div class="content-text work-listing education-listing">
+                <p class="heading">Ajman University</p>
+
+                <p class="highlight">United Arab Emirates</p>
+              </div>
+            </div>
+          </section>
+
+          <!--Languages-->
+          <section class="content">
+            <div class="row">
+              <div class="content-cat big-text">
+                Languages
+              </div>
+              <div class="content-text skills-listing">
+                <ul>
+                  <li>
+                    Arabic
+                    <p class="highlight">Mother tongue</p>
+                  </li>
+
+                  <li>
+                    English
+                    <span>(Advanced)</span>
+                    <p class="highlight">C1-C2</p>
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                    German
+                    <span>Beginner</span>
+                    <p class="highlight">A2 - Certified</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!--Job related and social skills header-->
+          <header>
+            <div class="header-content">
+              <div class="header-text">
+                <p>
+                  <span class="skills">Job related & Social Skills</span>
+                </p>
+              </div>
+            </div>
+          </header>
+
+          <!--Job related and social skills list-->
+          <section class="content">
+            <div class="row">
+              <div class="content-cat">
+                Social
+              </div>
+
+              <div class="content-text work-listing education-listing">
+                <p class="heading">Punctual, Confident, Dynamic, Energetic, Infectious, Inventor, Strategist, Protector.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content">
+            <div class="row">
+              <div class="content-cat">
+                Technical&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </div>
+
+              <div class="content-text skills-listing">
+                <ul>
+                  <li>
+                    Web + Text editors
+                    <span>(Beginner)</span>
+
+                    <p class="highlight">HTML, CSS</p>
+
+                    <p class="highlight">Atom, Bracket, Codeben.io</p>
+                  </li>
+
+                  <li>
+                    Languages + IDEs
+
+                    <span>(Beginner)</span>
+
+                    <p class="highlight">Javascript</p>
+
+                    <p class="highlight">Webstorm</p>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    VDS
+
+                    <span>(Beginner)</span>
+
+                    <p class="highlight">Github</p>
+                  </li>
+
+                  <li class="no-print">
+                    Software
+
+                    <span>(Beginner to Intermediate)</span>
+
+                    <p class="highlight">Adobe Photoshop</p>
+
+                    <p class="highlight">Adobe Lightroom</p>
+
+                    <p class="highlight">Rawtherapy</p>
+
+                    <p class="highlight">Darktable</p>
+
+                    <p class="highlight">Camtasia 2018</p>
+
+                    <p class="highlight">OBS studio.</p>
+
+                    <p class="highlight">Ableton</p>
+
+                    <p class="highlight">Audacity</p>
+
+                    <p class="highlight">Libreoffice | MS Office</p>
+                  </li>
+                </ul>
+                <ul>
+                  <li class="print"></li>
+
+                  <li class="print">
+                    Software
+
+                    <span>(Beginner to Intermediate)</span>
+
+                    <p class="highlight">Adobe Photoshop</p>
+
+                    <p class="highlight">Adobe Lightroom</p>
+
+                    <p class="highlight">Rawtherapy</p>
+
+                    <p class="highlight">Darktable</p>
+
+                    <p class="highlight">Camtasia 2018</p>
+
+                    <p class="highlight">OBS studio.</p>
+
+                    <p class="highlight">Ableton</p>
+
+                    <p class="highlight">Audacity</p>
+
+                    <p class="highlight">Libreoffice | MS Office</p>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!--Hobbies list-->
+          <section class="content">
+            <div class="row">
+              <div class="content-cat">
+                Hobbies
+              </div>
+
+              <div class="content-text work-listing education-listing">
+                <p class="heading">Photography| Swimming | Content creation</p>
+              </div>
+            </div>
+          </section>
+
+          <!--CERTIFICATES list-->
+          <section class="content">
+            <div class="row">
+              <div class="content-cat">
+                CERTI<span class="break">-</span>FICATES
+              </div>
+
+              <div class="content-text work-listing education-listing">
+                <p class="heading">Available in linkedin account under Accomplishments</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
     </div>
-
-    <div id="work">
-      <h2>work experience</h2>
-
-      <ul class="breadcrumb">
-        <li>2017 - Current</li>
-
-        <ul class="breadcrumb2">
-          <li>Photography</li>
-        </ul>
-
-        <li>2000 - Current</li>
-
-        <ul class="breadcrumb2">
-          <li>Computer Maintenance.</li>
-        </ul>
-
-        <li>2013 - 2015</li>
-
-        <ul class="breadcrumb2">
-          <li>Insurance Pharmacist</li>
-        </ul>
-
-        <li>2010 - 2013</li>
-
-        <ul class="breadcrumb2">
-          <li>Pharmacist</li>
-        </ul>
-
-        <li>2009 - 2010</li>
-
-        <ul class="breadcrumb2">
-          <li>Interpreter</li>
-        </ul>
-
-        <li>2007 - 2011</li>
-
-        <ul class="breadcrumb2">
-          <li>Pharmacist</li>
-        </ul>
-      </ul>
-
-    </div>
-
-    <div id="edu2jobrelated">
-      <div id="education">
-        <h2>education - training</h2>
-
-        <ul class="breadcrumb">
-          <li>2018 - current<br> Powercoders bootcamp - HTML | CSS | JS | Github.</li>
-          <li>2017 - 2018<br>Online Courses - SQL inquiry | Frontend</li>
-          <li>2011<br>Syrian Pharmacist National License.</li>
-          <li>2005 - 2007<br>Purdue University - Pharm.D (USA).</li>
-          <li>1997 - 2004<br>Ajman University - B.Sc Pharmaceutical and Health Sciences (UAE).</li>
-        </ul>
-      </div>
-
-      <div id="languages">
-        <h2>languages</h2>
-
-        <p>English C1 | German A2 | Arabic: Mother tongue</p>
-      </div>
-
-      <div id="job-social">
-        <h2>Job-related and Social skills</h2>
-
-        <p>Good command of verbal/written communication, translation.</p>
-
-        <p>Confident, dynamic, energetic, infectious, Inventor, Strategist, Protector.</p>
-      </div>
-
-      <div id="software">
-        <h2>Digital skills</h2>
-
-        <ul class="breadcrumb">
-          <li>Linux | Windows. (Maintenance)</li>
-          <li>Libreoffice | MS Office.</li>
-          <li>HTML | CSS | JS | VDS: Github | Atom | Command line.</li>
-          <li>Rawtherapy | lightroom | Darktable.</li>
-          <li>Camtasia 2018 | OBS studio.</li>
-          <li>Ableton | Audacity.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div id="hobbies">
-      <h2>hobbies</h2>
-
-      <p>Photography | Swimming | Content creation</p>
-    </div>
-
-    <div id="certificates">
-      <p><a href="https://www.mycloud.ch/s/S00057A05ABAFCF56A398E457427DDDA5913E9BCD34" class="link">Download Certificates</a></p>
-    </div>
-  </div>
-</body>
-</html>
+  </body>
+  </html>
