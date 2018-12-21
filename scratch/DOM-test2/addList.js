@@ -1,10 +1,13 @@
 
 function addList() {
-    let elLi1 = document.createElement('li');
+    let elUl = document.createElement('ul');
     let elBody = document.getElementById('body');
+
+
+    let elLi1 = document.createElement('li');
     let liContentTextLi1 = document.createTextNode('Item one');
     elLi1.appendChild(liContentTextLi1);
-    elBody.appendChild(elLi1);
+    elUl.appendChild(elLi1);
 
 let elLi2 = document.createElement('li');
     let liContentText1 = document.createTextNode('This is a ');
@@ -16,12 +19,14 @@ let elLi2 = document.createElement('li');
     liContentEm.appendChild(liContentEmText);
     let liContentText2 = document.createTextNode(' text');
     elLi2.appendChild(liContentText2);
-    elBody.appendChild(elLi2);
+    elUl.appendChild(elLi2);
 
     let elLi3 = document.createElement('li');
     let liContentTextLi3 = document.createTextNode('Item Three');
     elLi3.appendChild(liContentTextLi3);
-    elBody.appendChild(elLi3);
+    elUl.appendChild(elLi3);
+
+    elBody.appendChild(elUl)
     }
 
     document.addEventListener('DOMContentLoaded', function (event) {
