@@ -27,9 +27,9 @@ function addList() {
     elUl.appendChild(elLi3);
 
     elBody.appendChild(elUl)
-    }
+}
 
-    document.addEventListener('DOMContentLoaded', function (event) {
+document.addEventListener('DOMContentLoaded', function (event) {
     console.log(event.type + 'fired');
 
     document.getElementById('click-para').addEventListener('click' , function (event){
