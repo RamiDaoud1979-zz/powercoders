@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/../cheatsheet/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../portfolio/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../portfolio/cv.html" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/cv.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../portfolio/cv.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../portfolio/mediaprint.css" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/mediaprint.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../portfolio/min600.css" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/min600.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../portfolio/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/style.css" afterDir="false" />
@@ -28,6 +27,8 @@
       <change beforePath="$PROJECT_DIR$/../scratch/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../scratch/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../scratch/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../scratch/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../scratch/whatever-you-want/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../scratch/whatever-you-want/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            <state relative-caret-position="127">
+              <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -128,6 +129,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/shopping/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -138,23 +149,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1546851486196</updated>
-      <workItem from="1546851488040" duration="721000" />
+      <workItem from="1546851488040" duration="3604000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="721000" />
+    <option name="totallyTimeSpent" value="3604000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="0" width="1606" height="868" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24984147" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24984147" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32884097" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -162,7 +181,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32884097" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -170,6 +189,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add label and input element to shopping list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add label and input element to shopping list" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/style.css">
@@ -180,8 +203,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        <state relative-caret-position="127">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
         </state>
       </provider>
     </entry>
