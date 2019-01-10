@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
     let inputBox = document.getElementById('item');
     let createListItem = createNewListItem(inputBox.value);
     ulElement.appendChild(createListItem);
+    inputBox.value = '';
   });
 
   document.querySelector('input').addEventListener('keyup', function (event) {
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
       let inputBox = document.getElementById('item');
       let createListItem = createNewListItem(inputBox.value);
       ulElement.appendChild(createListItem);
+      inputBox.value = '';
     }
   });
 });
