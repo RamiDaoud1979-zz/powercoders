@@ -1,9 +1,9 @@
 function createNewListItem(itemName) {
-  let li = document.createElement('li');
-  let span = document.createElement('span');
+  const li = document.createElement('li');
+  const span = document.createElement('span');
   span.innerText = itemName;
   li.appendChild(span);
-  let deleteButton = document.createElement('button');
+  const deleteButton = document.createElement('button');
   deleteButton.textContent = 'Delete';
   deleteButton.addEventListener('click', function (event) {
     console.log('Delete button is clicked' + " " + itemName);
@@ -14,9 +14,9 @@ function createNewListItem(itemName) {
 }
 
 document.addEventListener('DOMContentLoaded', function (event) {
-  let ulElement = document.querySelector('ul');
-  let inputBox = document.getElementById('item');
-  let addItemButton = document.querySelector('button');
+  const ulElement = document.querySelector('ul');
+  const inputBox = document.getElementById('item');
+  const addItemButton = document.querySelector('button');
 
   document.querySelector('button').addEventListener('click', function () {
     if (inputBox.value.trim() !== '') {

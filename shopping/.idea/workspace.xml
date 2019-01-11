@@ -45,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="13" column="29" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="29" />
+            <state relative-caret-position="405">
+              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -63,8 +63,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shopping.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+            <state relative-caret-position="243">
+              <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -86,8 +86,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/shopping.js" />
       </list>
     </option>
@@ -170,7 +170,7 @@
       <workItem from="1547110287033" duration="13124000" />
       <workItem from="1547188335223" duration="601000" />
       <workItem from="1547193902416" duration="5331000" />
-      <workItem from="1547211102929" duration="1066000" />
+      <workItem from="1547211102929" duration="7213000" />
     </task>
     <task id="LOCAL-00001" summary="Add label and input element to shopping list">
       <created>1546856304409</created>
@@ -214,11 +214,25 @@
       <option name="project" value="LOCAL" />
       <updated>1547131033774</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Do not add list if the widget is empty or contain spaces">
+      <created>1547213645807</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1547213645807</updated>
+    </task>
+    <task id="LOCAL-00008" summary="disable button with empty string or spaces">
+      <created>1547218532702</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1547218532702</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53164000" />
+    <option name="totallyTimeSpent" value="59311000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -231,9 +245,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="0" width="1606" height="868" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23335446" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23335446" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -264,7 +277,9 @@
     <MESSAGE value="Write a function that creates a list item upon clicking on a button" />
     <MESSAGE value="Allow user to add the list item by releasing the Enter Key" />
     <MESSAGE value="clear widget after clicking button or pressing enter" />
-    <option name="LAST_COMMIT_MESSAGE" value="clear widget after clicking button or pressing enter" />
+    <MESSAGE value="Do not add list if the widget is empty or contain spaces" />
+    <MESSAGE value="disable button with empty string or spaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="disable button with empty string or spaces" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/style.css">
@@ -276,15 +291,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="29" />
+        <state relative-caret-position="405">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shopping.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        <state relative-caret-position="243">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
         </state>
       </provider>
     </entry>
