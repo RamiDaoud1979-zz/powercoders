@@ -16,23 +16,29 @@ function createNewListItem(itemName) {
 document.addEventListener('DOMContentLoaded', function (event) {
   let ulElement = document.querySelector('ul');
   let inputBox = document.getElementById('item');
+  let addItemButton = document.querySelector('button');
 
   document.querySelector('button').addEventListener('click', function () {
     if (inputBox.value.trim() !== '') {
       ulElement.appendChild(createNewListItem(inputBox.value.trim()));
       inputBox.value = '';
+      addItemButton.disabled = true;
     }
     inputBox.focus();
   });
 
   inputBox.addEventListener('keyup', function (event) {
-    if (event.key === 'Enter') {
-      if (inputBox.value.trim() !== '') {
+    if (inputBox.value.trim() !== '') {
+      addItemButton.disabled = false;
+      if (event.key === 'Enter') {
         ulElement.appendChild(createNewListItem(inputBox.value.trim()));
         inputBox.value = '';
       }
     }
+    if (inputBox.value.trim() === '') {
+      addItemButton.disabled = true;
+    }
   });
-
+  addItemButton.disabled = true;
   inputBox.focus();
 });
