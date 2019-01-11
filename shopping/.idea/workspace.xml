@@ -45,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+            <state relative-caret-position="351">
+              <caret line="13" column="29" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -63,8 +63,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shopping.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+            <state relative-caret-position="648">
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -106,7 +106,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -118,6 +117,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -167,7 +167,10 @@
       <workItem from="1546934742210" duration="10918000" />
       <workItem from="1546973341669" duration="736000" />
       <workItem from="1547046748811" duration="1253000" />
-      <workItem from="1547110287033" duration="9411000" />
+      <workItem from="1547110287033" duration="13124000" />
+      <workItem from="1547188335223" duration="601000" />
+      <workItem from="1547193902416" duration="5331000" />
+      <workItem from="1547211102929" duration="1066000" />
     </task>
     <task id="LOCAL-00001" summary="Add label and input element to shopping list">
       <created>1546856304409</created>
@@ -204,11 +207,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547127440136</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="clear widget after clicking button or pressing enter">
+      <created>1547131033774</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1547131033774</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42453000" />
+    <option name="totallyTimeSpent" value="53164000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -223,13 +233,13 @@
     <frame x="-3" y="0" width="1606" height="868" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23335446" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23335446" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.29514825" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.04043127" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32884097" />
@@ -253,7 +263,8 @@
     <MESSAGE value="Retrieve the input value and show it in the console." />
     <MESSAGE value="Write a function that creates a list item upon clicking on a button" />
     <MESSAGE value="Allow user to add the list item by releasing the Enter Key" />
-    <option name="LAST_COMMIT_MESSAGE" value="Allow user to add the list item by releasing the Enter Key" />
+    <MESSAGE value="clear widget after clicking button or pressing enter" />
+    <option name="LAST_COMMIT_MESSAGE" value="clear widget after clicking button or pressing enter" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/style.css">
@@ -265,15 +276,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        <state relative-caret-position="351">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shopping.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        <state relative-caret-position="648">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
         </state>
       </provider>
     </entry>

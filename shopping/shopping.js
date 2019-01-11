@@ -14,21 +14,25 @@ function createNewListItem(itemName) {
 }
 
 document.addEventListener('DOMContentLoaded', function (event) {
-  document.querySelector('button').addEventListener('click', function () {
-    let ulElement = document.querySelector('ul');
-    let inputBox = document.getElementById('item');
-    let createListItem = createNewListItem(inputBox.value);
-    ulElement.appendChild(createListItem);
-    inputBox.value = '';
-  });
+  let ulElement = document.querySelector('ul');
+  let inputBox = document.getElementById('item');
 
-  document.querySelector('input').addEventListener('keyup', function (event) {
-    if (event.key === 'Enter') {
-      let ulElement = document.querySelector('ul');
-      let inputBox = document.getElementById('item');
-      let createListItem = createNewListItem(inputBox.value);
-      ulElement.appendChild(createListItem);
+  document.querySelector('button').addEventListener('click', function () {
+    if (inputBox.value.trim() !== '') {
+      ulElement.appendChild(createNewListItem(inputBox.value.trim()));
       inputBox.value = '';
     }
+    inputBox.focus();
   });
+
+  inputBox.addEventListener('keyup', function (event) {
+    if (event.key === 'Enter') {
+      if (inputBox.value.trim() !== '') {
+        ulElement.appendChild(createNewListItem(inputBox.value.trim()));
+        inputBox.value = '';
+      }
+    }
+  });
+
+  inputBox.focus();
 });
