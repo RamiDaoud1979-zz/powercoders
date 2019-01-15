@@ -1,15 +1,15 @@
 body, html {
-  padding-top:2.5em;
-  margin:0;
-  background-color:rgb(250, 250, 250);
+  padding-top: 2.5em;
+  margin: 0;
+  background-color: rgb(250, 250, 250);
 }
+
 /* Header */
 
 header {
-  width:100%;
-  vertical-align: middle;
+  width: 100%;
+  vertical-align: top;
   text-align: center;
-
 }
 
 .header-content {
@@ -18,38 +18,36 @@ header {
 
 .pic {
   margin: 0 auto;
-  margin-top:-2.5em;
-  border-radius:10em;
-  height:4em;
-  width:4em;
-  background-image: url(https://media.licdn.com/dms/image/C4D03AQEoQsCi0DGnnA/profile-displayphoto-shrink_200_200/0?e=1550707200&v=beta&t=k2hBuIABk5tluvbyKe5Md3eIke7XaaQLSpR9-9UOVGE);
+  margin-top: -2.5em;
+  border-radius: 10em;
+  background-image: url(https://media.licdn.com/dms/image/C4D03AQEETl4GuLckkg/profile-displayphoto-shrink_200_200/0?e=1552521600&v=beta&t=MgN2q5CJHTypc-KTbtoe5oScwvZSUc4M1S82dBnbU2w);
   background-size: 100% auto;
   border: 2px solid rgb(224, 224, 224);
-  transition : all 0.5s linear;
+  transition: all 0.5s linear;
   display: block;
+  width: 8em;
+  height: 8em;
 }
 
 img {
   margin: 0 auto;
   margin-top: -8em;
-  border-radius:10em;
-  height:4em;
-  width:4em;
-  background-image: url(https://media.licdn.com/dms/image/C4D03AQEoQsCi0DGnnA/profile-displayphoto-shrink_200_200/0?e=1550707200&v=beta&t=k2hBuIABk5tluvbyKe5Md3eIke7XaaQLSpR9-9UOVGE);
+  border-radius: 10em;
+  background-image: url(https://media.licdn.com/dms/image/C4D03AQEETl4GuLckkg/profile-displayphoto-shrink_200_200/0?e=1552521600&v=beta&t=MgN2q5CJHTypc-KTbtoe5oScwvZSUc4M1S82dBnbU2w);
   background-size: 100% auto;
   border: 2px solid rgb(224, 224, 224);
-  transition : all 0.5s linear;
+  transition: all 0.5s linear;
   display: none;
 }
 
 @-webkit-keyframes wiggle {
-  0%   {
+  0% {
     transform: rotate(0deg);
   }
-  25%  {
+  25% {
     transform: rotate(-30deg);
   }
-  50%  {
+  50% {
     transform: rotate(15deg);
   }
   100% {
@@ -60,21 +58,19 @@ img {
 .pic:hover {
   /*Webkit fix*/
   -webkit-transform: translateZ(0);
-
-  cursor:pointer;
-
+  cursor: pointer;
   -webkit-animation: wiggle 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
 .header-text {
-  margin-top:0.5em;
-  margin-left:1em;
+  margin-top: 0.5em;
+  margin-left: 1em;
 }
 
 header p {
-  text-align:center;
-  font-family: "Merriweather";
-  margin:0;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  margin: 0;
   color: #212121;
 }
 
@@ -87,25 +83,25 @@ header p {
 }
 
 .subtitle {
-  font-family: "Merriweather";
-  padding-top:.3em;
-  font-size:0.55em;
-  font-weight:500;
+  font-family: "Merriweather", serif;
+  padding-top: .3em;
+  font-size: 0.55em;
+  font-weight: 500;
   color: rgb(66, 66, 66);
 }
 
 /* Information */
 .paper {
   margin: 0 auto;
-  margin-bottom:1em;
-  background-color:white;
+  margin-bottom: 1em;
+  background-color: white;
   width: 95%;
-  padding:0.5em 0 0.5em 0;
+  padding: 0.5em 0 0.5em 0;
   border-top: 1px solid rgb(224, 224, 224);
   border-left: 1px solid rgb(224, 224, 224);
   border-right: 1px solid rgb(224, 224, 224);
   border-bottom: 3px solid rgb(224, 224, 224);
-  border-radius:3px;
+  border-radius: 3px;
 }
 
 /* Content Part */
@@ -114,81 +110,82 @@ header p {
 }
 
 .content {
-  display:table;
-  width:100%;
+  display: table;
+  width: 100%;
 
-  padding-top:.7em;
+  padding-top: .7em;
 
   /*border-top: 1px solid rgb(238, 238, 238);*/
 }
+
 .content:last-child {
-  padding-bottom:1.5em;
+  padding-bottom: 1.5em;
 }
 
 .row {
-  display:table-row;
+  display: table-row;
 }
 
 .row div {
-  display:table-cell;
+  display: table-cell;
 }
 
 .content-cat {
-  font-family: "Merriweather";
-  font-variant:small-caps;
-  font-weight:300;
+  font-family: "Merriweather", serif;
+  font-variant: small-caps;
+  font-weight: 300;
   letter-spacing: 1px;
   color: rgb(33, 33, 33);
-  font-size:0.975em;
-  text-align:center;
-  vertical-align:middle;
-  padding-left:6.66%;
-  width:36.66%;
+  font-size: 0.975em;
+  text-align: center;
+  vertical-align: top;
+  padding-left: 6.66%;
+  width: 36.66%;
 }
 
 .content-cat p {
-  font-size:0.55em;
-  font-weight:600;
-  margin-bottom:0;
+  font-size: 0.55em;
+  font-weight: 600;
+  margin-bottom: 0;
 }
 
 .content-text {
-  border-left:1px solid rgb(224, 224, 224);
+  border-left: 1px solid rgb(224, 224, 224);
   transition: border 0.66s ease-in;
 }
 
 .content-text:hover {
-  border-left:1px solid rgb(189, 189, 189);
+  border-left: 1px solid rgb(189, 189, 189);
 }
 
 .big-text {
-  vertical-align:top;
-  padding-top:1.25em;
+  vertical-align: top;
+  padding-top: 1.25em;
 }
 
 .content-text ul {
-  padding:0;
-  margin:0;
-  margin-top:0.15em;
-  width:85%;
-  margin-left:1.5em;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.15em;
+  width: 85%;
+  margin-left: 1.5em;
 }
 
 .content-text ul:last-child {
-  margin-bottom:0.5em;
+  margin-bottom: 0.5em;
 }
 
 .content-text ul li {
   font-family: "Open Sans";
-  font-size:0.7em;
-  display:inline-block;
+  font-size: 0.7em;
+  display: inline-block;
 }
 
 .content-text ul li:first-child {
-  width:35%;
+  width: 35%;
   color: rgb(66, 66, 66);
-  font-weight:600;
-  font-size:0.75;
+  font-weight: 600;
+  font-size: 0.75;
 }
 
 .content-text ul li a {
@@ -197,68 +194,65 @@ header p {
 }
 
 .content-text ul li a:hover {
-  color:rgb(79, 195, 247);
+  color: rgb(79, 195, 247);
 }
 
 .work-listing p {
   font-family: "Open Sans";
-  font-size:0.6em;
-  font-weight:400;
-  line-height:1.5;
+  font-size: 0.8em;
+  font-weight: 400;
+  line-height: 1.5;
   color: rgb(66, 66, 66);
-  margin-left:2em;
-  margin-top:0.25em;
-  margin-bottom:0.75em;
+  margin-left: 2em;
+  margin-top: 0.25em;
+  margin-bottom: 0.75em;
 }
 
 .work-listing .highlight, .content-text.skills-listing > ul > li > .highlight {
   font-family: "Open Sans";
-  font-size:0.7em;
-  font-weight:400;
+  font-size: 0.7em;
+  font-weight: 400;
   color: rgb(66, 66, 66);
-
-  margin-left:3.25em;
-  padding-left:0.5em;
-  border-left:1px solid rgb(224, 224, 224);
+  margin-left: 3.25em;
+  padding-left: 0.5em;
+  border-left: 1px solid rgb(224, 224, 224);
 }
 
 .education-listing > .heading {
-  font-weight:600;
-
-  margin-top:0.75em;
-  margin-left:2em;
+  font-weight: 600;
+  margin-top: 0.75em;
+  margin-left: 2em;
 }
 
 .education-listing > .highlight {
-  margin-left:3.25em;
+  margin-left: 3.25em;
 }
 
 .content-text.skills-listing > ul {
-  display:table-row;
+  display: table-row;
 }
 
 .content-text.skills-listing > ul:last-child {
-  margin-bottom:0;
+  margin-bottom: 0;
 }
 
 .content-text.skills-listing > ul > li {
-  display:table-cell;
-  vertical-align:top;
-  padding-left:1.1em;
-  width:50%;
-  font-weight:600;
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 1.1em;
+  width: 50%;
+  font-weight: 600;
 }
 
 .content-text.skills-listing > ul > li span {
-  font-weight:400;
+  font-weight: 400;
   color: rgb(97, 97, 97);
 }
 
 .content-text.skills-listing > ul > li > .highlight {
-
-  font-size:1em;
-  font-weight:400;
-  margin-left:1.25em;
+  font-size: 1em;
+  font-weight: 400;
+  margin-left: 1.25em;
 }
 
 .highlight {
@@ -266,7 +260,7 @@ header p {
 }
 
 .highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
-  border-left:1px solid rgb(158, 158, 158);
+  border-left: 1px solid rgb(158, 158, 158);
 }
 
 .work, .edu, .skills {

@@ -23,12 +23,30 @@ body {
 
 .pic {
   display: none;
+  }
+
+.pic-print {
+  margin-top: 2.999em;
+
 }
 
 img {
   display: inline-block;
-}
+  width: 21%;
+  }
 
 .break {
   display: none;
+}
+
+/*Adding to first page a bottom border*/
+section#first:empty {
+  padding-bottom:0.1em;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+/*Pushing education to second page and adding to second page a top border*/
+section#second:empty {
+  margin-top: 12%;
+    border-top: 1px solid rgb(238, 238, 238);
 }
