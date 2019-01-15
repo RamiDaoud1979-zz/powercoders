@@ -1,10 +1,18 @@
+/**
+ * Create and returns an 'li' element for inclusion in the shopping list.
+ *
+ * Read the code to understand the DOM tree structure.
+ *
+ * @param {string} itemName Name of the item to add to the list
+ * @returns {HTMLElement} li element
+ */
 function createNewListItem(itemName) {
   const li = document.createElement('li');
   const span = document.createElement('span');
   span.innerText = itemName;
   li.appendChild(span);
-  const deleteButton = document.createElement('button');
-  deleteButton.textContent = 'Delete';
+  const deleteButton = document.createElement(  'button');
+  deleteButton.innerHTML = '<img src="delete.png" alt="delete"/>';
   deleteButton.addEventListener('click', function (event) {
     console.log('Delete button is clicked' + " " + itemName);
     li.remove();
@@ -14,31 +22,40 @@ function createNewListItem(itemName) {
 }
 
 document.addEventListener('DOMContentLoaded', function (event) {
-  const ulElement = document.querySelector('ul');
+  /** Widget that the user types on item in to. */
   const inputBox = document.getElementById('item');
+  const shoppingList = document.querySelector('ul');
   const addItemButton = document.querySelector('button');
 
-  document.querySelector('button').addEventListener('click', function () {
-    if (inputBox.value.trim() !== '') {
-      ulElement.appendChild(createNewListItem(inputBox.value.trim()));
-      inputBox.value = '';
-      addItemButton.disabled = true;
+  addItemButton.addEventListener('click', function () {
+    const trimmedValue = inputBox.value.trim();
+
+    if (trimmedValue === '') {
+      return;
     }
+
+    shoppingList.appendChild(createNewListItem(trimmedValue));
+    inputBox.value = '';
+    addItemButton.disabled = true;
     inputBox.focus();
   });
 
   inputBox.addEventListener('keyup', function (event) {
-    if (inputBox.value.trim() !== '') {
-      addItemButton.disabled = false;
-      if (event.key === 'Enter') {
-        ulElement.appendChild(createNewListItem(inputBox.value.trim()));
-        inputBox.value = '';
-      }
+    const trimmedValue = inputBox.value.trim();
+    addItemButton.disabled = trimmedValue === '';
+
+    if (trimmedValue === '') {
+      return;
     }
-    if (inputBox.value.trim() === '') {
-      addItemButton.disabled = true;
+    if (event.key !== 'Enter') {
+      return;
     }
+
+    shoppingList.appendChild(createNewListItem(trimmedValue));
+    inputBox.value = '';
+    addItemButton.disabled = true;
   });
-  addItemButton.disabled = true;
   inputBox.focus();
+  addItemButton.disabled = true;
 });
+

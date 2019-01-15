@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <title>Shopping list</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
     <script src="shopping.js"></script>
   </head>
+
   <body>
-    <h1>My shopping list</h1>
-    <!--controls to add new items go here-->
-<div>
-  <label for="item">Enter a new item:</label>
-  <input type="text" id="item"
-  placeholder="Type something to buy">
-  <button>Add item</button>
-</div>
-    <!--This is the shopping list-->
-    <ul>
-      <!--List items will be added and removed here :-)-->
-    </ul>
+    <div class="background-image">
+      <div></div>
+      <div class="content">
+        <div class="heading">My shopping list</div>
+        <!--controls to add new items go here-->
+        <div class="input">
+          <label for="item">Enter a new item:</label>
+          <input type="text" id="item"
+                 placeholder="Type something to buy"
+                 maxlength="24px">
+          <button>Add item</button>
+        </div>
+        <!--This is the shopping list-->
+        <ul>
+          <!--List items will be added and removed here :-)-->
+        </ul>
+      </div>
+      <div></div>
+    </div>
   </body>
+
 </html>

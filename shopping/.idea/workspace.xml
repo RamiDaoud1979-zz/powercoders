@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/shopping.js" line="14" mnemonic="7" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff390a33-b7fd-4f16-b4db-17d1003fd4d4" name="Default Changelist" comment="clear the input widget after clicking on">
+    <list default="true" id="ff390a33-b7fd-4f16-b4db-17d1003fd4d4" name="Default Changelist" comment="Add CSS style">
+      <change afterPath="$PROJECT_DIR$/../scratch/flex/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratch/flex/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cheatsheet/git.html" beforeDir="false" afterPath="$PROJECT_DIR$/../cheatsheet/git.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cheatsheet/html.html" beforeDir="false" afterPath="$PROJECT_DIR$/../cheatsheet/html.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cheatsheet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../cheatsheet/index.html" afterDir="false" />
@@ -29,7 +34,9 @@
       <change beforePath="$PROJECT_DIR$/../scratch/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../scratch/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../scratch/whatever-you-want/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../scratch/whatever-you-want/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shopping.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,13 +47,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="shopping" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            <state relative-caret-position="297">
+              <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -54,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+            <state relative-caret-position="1809">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
             </state>
           </provider>
         </entry>
@@ -63,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shopping.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            <state relative-caret-position="357">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -80,14 +90,29 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>shopping</find>
+      <find>ulElement</find>
+      <find>max</find>
+      <find>padding</find>
+      <find>margin</find>
+      <find>heading</find>
+      <find>span</find>
+      <find>border-bot</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>shoppingList</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/shopping.js" />
       </list>
     </option>
@@ -106,6 +131,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,18 +143,18 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../recipes" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -170,7 +196,12 @@
       <workItem from="1547110287033" duration="13124000" />
       <workItem from="1547188335223" duration="601000" />
       <workItem from="1547193902416" duration="5331000" />
-      <workItem from="1547211102929" duration="7213000" />
+      <workItem from="1547211102929" duration="7834000" />
+      <workItem from="1547287679286" duration="2317000" />
+      <workItem from="1547453785897" duration="16940000" />
+      <workItem from="1547488689032" duration="3377000" />
+      <workItem from="1547539876366" duration="23287000" />
+      <workItem from="1547574715221" duration="11364000" />
     </task>
     <task id="LOCAL-00001" summary="Add label and input element to shopping list">
       <created>1546856304409</created>
@@ -228,11 +259,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547218532702</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Change let to const">
+      <created>1547220041628</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1547220041628</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59311000" />
+    <option name="totallyTimeSpent" value="117217000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -245,22 +283,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="0" width="1606" height="868" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23335446" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2219404" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24984147" />
+      <window_info id="Favorites" order="2" side_tool="true" weight="0.32974002" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.04043127" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49968293" weight="0.40026954" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32884097" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32884097" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32884097" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.25067386" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50031704" side_tool="true" weight="0.31940702" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.25067386" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -279,27 +318,32 @@
     <MESSAGE value="clear widget after clicking button or pressing enter" />
     <MESSAGE value="Do not add list if the widget is empty or contain spaces" />
     <MESSAGE value="disable button with empty string or spaces" />
-    <option name="LAST_COMMIT_MESSAGE" value="disable button with empty string or spaces" />
+    <MESSAGE value="Change let to const" />
+    <MESSAGE value="Add CSS style" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add CSS style" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/../scratch/flex/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        <state relative-caret-position="297">
+          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1809">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shopping.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="357">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
         </state>
       </provider>
     </entry>
