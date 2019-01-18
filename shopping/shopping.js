@@ -58,4 +58,3 @@ document.addEventListener('DOMContentLoaded', function (event) {
   inputBox.focus();
   addItemButton.disabled = true;
 });
-
