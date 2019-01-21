@@ -6,7 +6,7 @@ body {
 
 .content-cat {
   width: 16.66%;
-  padding-left:0;
+  padding-left: 0;
 }
 
 .content-text.skills-listing > ul > li.no-print {
@@ -23,7 +23,7 @@ body {
 
 .pic {
   display: none;
-  }
+}
 
 .pic-print {
   margin-top: 2.999em;
@@ -33,7 +33,7 @@ body {
 img {
   display: inline-block;
   width: 21%;
-  }
+}
 
 .break {
   display: none;
@@ -41,12 +41,12 @@ img {
 
 /*Adding to first page a bottom border*/
 section#first:empty {
-  padding-bottom:0.1em;
+  padding-bottom: 0.1em;
   border-bottom: 1px solid rgb(238, 238, 238);
 }
 
 /*Pushing education to second page and adding to second page a top border*/
 section#second:empty {
   margin-top: 12%;
-    border-top: 1px solid rgb(238, 238, 238);
+  border-top: 1px solid rgb(238, 238, 238);
 }
