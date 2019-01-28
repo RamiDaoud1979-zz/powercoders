@@ -15,9 +15,9 @@ function createNewListItem(itemName) {
   const deleteButton = document.createElement('button');
   deleteButton.innerHTML = '<img src="delete.png" alt="delete"/>';
   deleteButton.addEventListener('click', function (event) {
-    console.log('Delete button is clicked' + " " + itemName);
     li.remove();
-  });
+
+    document.querySelector('button#clear').disabled = document.querySelectorAll('li').length === 0;   });
   li.appendChild(deleteButton);
   return li;
 }
@@ -49,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
     inputBox.value = '';
     addItemButton.disabled = true;
     clearListButton.disabled = false;
-    inputBox.focus();
   });
 
   inputBox.addEventListener('keyup', function (event) {
@@ -70,4 +69,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
   });
   inputBox.focus();
   addItemButton.disabled = true;
+  clearListButton.disabled = true;
 });
+
