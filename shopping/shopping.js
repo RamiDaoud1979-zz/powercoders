@@ -6,7 +6,6 @@
  * @param {string} quantity Quantity of the item to append to the list
  * @returns {HTMLElement} li element
  */
-
 function createNewListItem(itemName, quantity) {
   const li = document.createElement('li');
   const span = document.createElement('span');
@@ -35,7 +34,6 @@ function createNewListItem(itemName, quantity) {
  *  DOM is ready
  */
 function domContentLoaded() {
-
   /** Widget that the user types on item in to. */
   const inputBox = document.getElementById('item');
   const quantityBox = document.getElementById('quantity');
