@@ -5,7 +5,7 @@
     <title>Shopping list</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
-    <script src="shopping.js"></script>
+    <script src="shopping.js" async></script>
   </head>
 
   <body>
@@ -20,6 +20,9 @@
           <input type="text" id="item"
                  placeholder="Type something to buy"
                  maxlength="24px">
+          <input type="text" id="quantity"
+                 placeholder="Quantity"
+                 maxlength="10px">
           <button id="add">Add item</button>
           <button id="clear">Clear all</button>
         </div>
