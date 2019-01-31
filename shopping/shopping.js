@@ -1,21 +1,19 @@
 /**
  * Create and returns an 'li' element for inclusion in the shopping list.
  *
- *
- * @param {string} itemName Name of the item to add to the list
- * @param {string} quantity Quantity of the item to append to the list
+ * @param {{name: string, quantity:string}} item Item to append to the list
  * @returns {HTMLElement} li element
  */
-function createNewListItem(itemName, quantity) {
+function createNewListItem(item) {
   const li = document.createElement('li');
-  const span = document.createElement('span');
-  span.innerText = itemName;
-  li.appendChild(span);
+  const listText = document.createElement('span');
+  listText.innerText = item.name;
+  li.appendChild(listText);
 
-  if (quantity !== '') {
+  if (item.quantity !== '') {
     li.appendChild(document.createTextNode(' '));
     const quantityText = document.createElement('span');
-    quantityText.textContent = `(${quantity})`;
+    quantityText.textContent = `(${item.quantity})`;
     li.appendChild(quantityText);
   }
 
@@ -38,8 +36,8 @@ function domContentLoaded() {
   const inputBox = document.getElementById('item');
   const quantityBox = document.getElementById('quantity');
   const shoppingList = document.querySelector('ul');
-  const addItemButton = document.querySelector('button#add');
-  const clearListButton = document.querySelector('button#clear');
+  const addItemButton = document.querySelector('#add');
+  const clearListButton = document.querySelector('#clear');
 
   clearListButton.addEventListener('click', function () {
     const listItems = document.querySelectorAll('li');
@@ -57,7 +55,12 @@ function domContentLoaded() {
       return;
     }
 
-    shoppingList.appendChild(createNewListItem(trimmedValue, quantityBox.value.trim()));
+    const item = {
+      name: trimmedValue,
+      quantity: quantityBox.value.trim()
+    };
+
+    shoppingList.appendChild(createNewListItem(item));
     inputBox.value = '';
     quantityBox.value = '';
     addItemButton.disabled = true;
@@ -77,7 +80,12 @@ function domContentLoaded() {
       return;
     }
 
-    shoppingList.appendChild(createNewListItem(trimmedValue, quantityBox.value.trim()));
+    const item = {
+      name: trimmedValue,
+      quantity: quantityBox.value.trim()
+    };
+
+    shoppingList.appendChild(createNewListItem(item));
     inputBox.value = '';
     quantityBox.value = '';
     addItemButton.disabled = true;
