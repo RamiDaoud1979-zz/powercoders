@@ -12,20 +12,18 @@ function ShoppingListItem(name,quantity) {
 
 /**
  * Create and returns an 'li' element for inclusion in the shopping list.
- *
- * @param {ShoppingListItem} item Item to append to the list
  * @returns {HTMLElement} li element
  */
-function createNewListItem(item) {
+ShoppingListItem.prototype.toListItem = function() {
   const li = document.createElement('li');
   const listText = document.createElement('span');
-  listText.innerText = item.name;
+  listText.innerText = this.name;
   li.appendChild(listText);
 
-  if (item.quantity !== '') {
+  if (this.quantity !== '') {
     li.appendChild(document.createTextNode(' '));
     const quantityText = document.createElement('span');
-    quantityText.textContent = `(${item.quantity})`;
+    quantityText.textContent = `(${this.quantity})`;
     li.appendChild(quantityText);
   }
 
@@ -69,7 +67,7 @@ function domContentLoaded() {
 
     const item = new ShoppingListItem(trimmedValue, quantityBox.value.trim());
 
-    shoppingList.appendChild(createNewListItem(item));
+    shoppingList.appendChild(item.toListItem());
     inputBox.value = '';
     quantityBox.value = '';
     addItemButton.disabled = true;
@@ -91,7 +89,7 @@ function domContentLoaded() {
 
     const item = new ShoppingListItem(trimmedValue, quantityBox.value.trim());
 
-    shoppingList.appendChild(createNewListItem(item));
+    shoppingList.appendChild(item.toListItem());
     inputBox.value = '';
     quantityBox.value = '';
     addItemButton.disabled = true;
