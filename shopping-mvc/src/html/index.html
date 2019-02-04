@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Shopping list</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+    <script src="../js/shopping-list-item.js"defer></script>
+    <script src="../js/view.js" defer></script>
+    <script src="../js/model.js" defer></script>
+    <script src="../js/controller.js" defer></script>
+    <script src="../js/ui.js" defer></script>
+  </head>
+
+  <body>
+    <div class="background-image">
+      <div></div>
+
+      <div class="content">
+        <div class="heading">My shopping list</div>
+        <!--controls to add new items go here-->
+        <div class="input">
+          <label for="item">Enter a new item:</label>
+
+          <input type="text" id="item"
+                 placeholder="Type something to buy"
+                 maxlength="24px">
+
+          <input type="text" id="quantity"
+                 placeholder="Quantity"
+                 maxlength="10px">
+          <button id="add">Add item</button>
+
+          <button id="clear">Clear all</button>
+        </div>
+        <!--This is the shopping list-->
+        <ul>
+          <!--List items will be added and removed here :-)-->
+        </ul>
+      </div>
+
+      <div></div>
+    </div>
+  </body>
+</html>
