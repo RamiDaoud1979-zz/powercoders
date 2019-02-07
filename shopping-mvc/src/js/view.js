@@ -26,6 +26,15 @@ class View {
     this.addItemButton_ = document.getElementById('add');
 
     this.addItemButton_.addEventListener('click', () => this.addItem());
+
+
+    /** private {!HTMLElement} Button to clear the list */
+    this.clearListButton_ = document.getElementById('clear');
+
+    this.addItemButton_.addEventListener('click', () => this.addItem());
+    this.clearListButton_.addEventListener('click', () => this.controller_.clearList());
+    this.inputBox_.addEventListener('keyup', (event) => this.onKeyup(event));
+    this.quantityBox_.addEventListener('keyup', (event) => this.onKeyup(event));
   }
 
   /**
@@ -37,6 +46,7 @@ class View {
 
     this.controller_.addItem(trimmedValue, trimmedQuantity);
   }
+
   /**
    * update the UI with the shopping list contents.
    */
@@ -45,8 +55,8 @@ class View {
       this.shoppingList_.firstChild.remove();
     }
 
-    for (let i = 0; i < this.model_.items.length; i++){
-      const item= this.model_.items[i];
+    for (let i = 0; i < this.model_.items.length; i++) {
+      const item = this.model_.items[i];
       const listItem = item.toListItem();
 
       const deleteButton = listItem.querySelector('button');
@@ -55,9 +65,33 @@ class View {
 
       this.shoppingList_.appendChild(listItem);
     }
-
+    this.addItemButton_.disabled = true;
     this.inputBox_.value = '';
     this.quantityBox_.value = '';
     this.inputBox_.focus();
+    this.clearListButton_.disabled = this.model_.items.length === 0;
+  }
+
+  /**
+   * Handle keyup events for input widgets, Conditionally
+   * enable/disable the addItemButton, and add the item if
+   * it's not the empty string
+   *
+   * @param event {!KeyboardEvent} Event that triggered
+   */
+  onKeyup(event) {
+    const trimmedValue = this.inputBox_.value.trim();
+
+    this.addItemButton_.disable = trimmedValue === '';
+
+    if (trimmedValue === '') {
+      return;
+    }
+
+    if (event.key !== 'Enter') {
+      return;
+    }
+
+    this.addItem();
   }
 }

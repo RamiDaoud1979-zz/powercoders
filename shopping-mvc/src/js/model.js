@@ -28,6 +28,14 @@ class Model {
   }
 
   /**
+   * Clear the shopping list of all items.
+   */
+  clear() {
+    this.items_ = [];
+    this.view_.update();
+  }
+
+  /**
    * Delete the i'th item from the list.
    *
    * @param i {number}
